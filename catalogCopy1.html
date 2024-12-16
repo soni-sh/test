@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from hotflix.volkovdesign.com/main/catalog.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Dec 2024 00:41:03 GMT -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/splide.min.css">
+	<link rel="stylesheet" href="css/slimselect.css">
+	<link rel="stylesheet" href="css/plyr.css">
+	<link rel="stylesheet" href="css/photoswipe.css">
+	<link rel="stylesheet" href="css/default-skin.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- Icon font -->
+	<link rel="stylesheet" href="webfont/tabler-icons.min.css">
+
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" href="img/new-images/logooo.png" sizes="64x64">
+	<!-- <link rel="apple-touch-icon" href="icon/favicon-32x32.png"> -->
+
+	<meta name="description" content="Online Movies, TV Shows & Cinema HTML Template">
+	<meta name="keywords" content="">
+	<meta name="author" content="Dmitry Volkov">
+	<title>Gaurav Bharat Samman</title>
+</head>
+
+<body>
+	<div class="container nav">
+		<a href="index.html"><img src="img/new-images/logooo.png" alt="Logo" class="logo"></a>
+		<h1>भारत गौरव सम्मान <br>Bharat Gaurav Samman</h1>
+	  </div>
+	  
+	  <style>
+		.nav {
+		  display: flex;
+		  align-items: center; /* Vertically center the items */
+		  justify-content: center; /* Horizontally center the items */
+		  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+		  padding: 10px; /* Optional, for spacing */
+		}
+	  
+		.nav h1 {
+		  color: #fff;
+		  font-family: "Roboto", sans-serif;
+		  text-align: center; /* Center the text */
+		  margin: 0 10px; /* Add some space between the logo and text */
+		}
+	  
+		.logo {
+		  width: 150px;
+		  height: auto;
+		}
+		
+		/* Adjust the layout for screens with a max width of 375px */
+@media (max-width: 375px) {
+  .nav {
+    flex-direction: row; /* Display items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+  }
+
+  .logo {
+    width: 80px !important; /* Adjust the logo size for smaller screens */
+  }
+
+  .nav h1 {
+    font-size: 1.2rem; /* Adjust the font size for smaller screens */
+    margin-left: 10px; /* Add some space between the logo and the text */
+  }
+}
+
+		/* Make the layout more responsive */
+		@media (max-width: 768px) {
+		  .nav {
+			flex-direction: row; /* Ensure the logo and text are in a row on mobile */
+			justify-content: flex-start; /* Align to the left side */
+		  }
+	  
+		  .logo {
+			width: 120px; /* Adjust the logo size for smaller screens */
+		  }
+	  
+		  .nav h1 {
+			font-size: 1.2rem; /* Adjust the font size for smaller screens */
+			margin-left: 10px; /* Add some space between the logo and the text */
+		  }
+		}
+	  </style>
+	  
+	  <header>
+		<!-- Menu Bar -->
+   <div class="menu-bar">
+	   <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+	   <div id="menu" class="menu">
+		   <ul>
+			   <li><a href="index.html">Home</a></li>
+			   <li><a href="">Awards</a></li>
+			   <li class="menuu-toggle">
+				   <a class="menu-toggle dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			   Gallery
+				   </a>
+				   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					 <li><a class="dropdown-item" href="catalogCopy1.html">Photos</a></li>
+					 <li><a class="dropdown-item" href="catalogCopy.html">Videos</a></li>
+				   </ul>
+				 </li>
+			   <li><a href="catalogCopy1.html">Category</a></li>
+			   <li><a href="#">Directors & Team</a></li>
+			   <li><a href="#">Contact</a></li>
+			   <li><a href="#">Testimonials</a></li>
+		   </ul>
+	   </div>
+   </div>
+
+   <style>
+	   /* General Reset */
+	   /* * {
+		   margin: 0;
+		   padding: 0;
+		   box-sizing: border-box;
+	   } */
+
+	   /* Menu Bar Styling */
+	   .menu-bar {
+		   position: fixed;
+		   top: 58px;
+		   right:22px;
+		   background-color: #333;
+		   width: 40px;
+		   height: auto;
+		   /* padding:5px; */
+		   display: flex;
+		   justify-content:center;
+		   z-index: 1000;
+		   border-radius: 5px;
+	   }
+
+	   .menu-toggle {
+		   font-size: 25px;
+		   color: white;
+		   /* color: #333; */
+		   background: none;
+		   border: none;
+		   cursor: pointer;
+	   }
+
+	   .menu {
+		   display: none;
+		   position: absolute;
+		   top: 50px;
+		   right: 0px;
+		   background-color: #333;
+		   padding: 10px;
+		   border-radius: 5px;
+	   }
+
+	   .menu ul {
+		   list-style-type: none;
+	   }
+
+	   .menu ul li {
+		   margin: 10px 0;
+	   }
+
+	   .menu ul li a {
+		   color: white;
+		   text-decoration: none;
+		   font-size: 18px;
+	   }
+	   .dropdown-menu{
+		   background: #333;
+	   }
+	   #navbarDropdown ul li a{
+		   color: #fff;
+		   text-decoration: none;
+		   font-size: 18px;
+	   }
+
+	   .menu ul li a:hover {
+		   color: #f1c40f;
+	   }
+
+	   /* Content Styling */
+	   .content {
+		   padding: 50px;
+		   margin-top: 50px;
+		   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	   }
+		  /* Responsive Styling */
+		  @media screen and (max-width: 375px){
+		   .menu-bar {
+		   position: fixed;
+		   top: 35px;
+		   right:15px;
+		   background-color: #333;
+		   width: 35px;
+		   height: auto;
+		   /* padding:5px; */
+		   display: flex;
+		   justify-content:center;
+		   z-index: 1000;
+		   border-radius: 5px;
+	   }
+		  }
+   </style>
+
+   <!-- Page Content -->
+   <!-- <div class="content">
+	   <h1>Welcome to My Website</h1>
+	   <p>Click the menu icon to view the menu.</p>
+   </div> -->
+
+   <script>
+	   // Function to toggle the menu visibility
+	   function toggleMenu() {
+		   var menu = document.getElementById('menu');
+		   if (menu.style.display === 'block') {
+			   menu.style.display = 'none';
+		   } else {
+			   menu.style.display = 'block';
+		   }
+	   }
+   </script>
+   </header>
+       <!-- marquee -->
+	   <article class="main-container__marquee">
+		<div class="main-container__marquee-track">
+			<div class="main-container__marquee-items">
+				<span class="main-container__marquee-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, distinctio laboriosam sit excepturi maxime veritatis, quam quas unde voluptatum explicabo sequi nam dolorem ipsum delectus id impedit ab exercitationem porro? consectetur adipisicing elit</span>
+				<span class="main-container__marquee-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, distinctio laboriosam sit excepturi maxime veritatis, quam quas unde voluptatum explicabo sequi nam dolorem ipsum delectus id impedit ab exercitationem porro?</span>
+				<span class="main-container__marquee-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit</span>
+			</div>
+			<div aria-hidden="true" class="main-container__marquee-items">
+				<span class="main-container__marquee-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, distinctio laboriosam sit excepturi maxime veritatis, quam quas unde voluptatum explicabo sequi nam dolorem ipsum delectus id impedit ab exercitationem porro? consectetur </span>
+				<span class="main-container__marquee-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, distinctio laboriosam sit excepturi maxime veritatis, quam quas unde voluptatum explicabo sequi nam dolorem ipsum delectus id impedit ab exercitationem porro?</span>
+				<span class="main-container__marquee-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit</span>
+			</div>
+		</div>
+	</article>
+   
+	 <!-- end marquee -->
+
+
+	
+	<!-- page title -->
+	<section class="section section--first p-0">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section__wrap">
+						<!-- section title -->
+						<!-- <h1 class="section__title section__title--head">Gallery</h1> -->
+						<!-- end section title -->
+
+						<!-- breadcrumbs -->
+						<ul class="breadcrumbs">
+							<li class="breadcrumbs__item"><a href="index.html">Home</a></li>
+							<li class="breadcrumbs__item breadcrumbs__item--active">Gallery</li>
+						</ul>
+						<!-- end breadcrumbs -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end page title -->
+
+	<!-- filter -->
+	<div class="filter">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="filter__content">
+						<!-- menu btn -->
+						<button class="filter__menu" type="button">
+							<!-- <i class="ti ti-filter"></i>Filter -->
+						</button>
+						<!-- end menu btn -->
+
+						<!-- filter desk -->
+						
+						<!-- end filter desk -->
+						
+						<!-- filter btn -->
+						<!-- <button class="filter__btn" type="button">Apply</button> -->
+						<!-- end filter btn -->
+
+						<!-- amount -->
+						<!-- <span class="filter__amount">Showing 18 of 1713</span> -->
+						<!-- end amount -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end filter -->
+	
+	<!-- catalog -->
+	<div class="section section--catalog">
+		<div class="container">
+			<div class="row">
+					<!-- item -->
+					<div class="col-6 col-sm-4 ">
+						<div class="item">
+							<div class="item__cover__gallery">
+								<img src="img\new-images\g-1.png" alt="">
+								<!-- <a href="details.html" class="item__play">
+									<i class="ti ti-player-play-filled"></i>
+								</a>
+								<span class="item__rate item__rate--green">8.4</span>
+								<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+							</div>
+							<!-- <div class="item__content">
+								<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+								<span class="item__category">
+									<a href="#">Action</a>
+									<a href="#">Triler</a>
+								</span>
+							</div> -->
+						</div>
+					</div>
+					<!-- end item -->
+					 	<!-- item -->
+					<div class="col-6 col-sm-4 ">
+						<div class="item">
+							<div class="item__cover__gallery">
+								<img src="img\new-images\g-2.png" alt="">
+								<!-- <a href="details.html" class="item__play">
+									<i class="ti ti-player-play-filled"></i>
+								</a>
+								<span class="item__rate item__rate--green">8.4</span>
+								<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+							</div>
+							<!-- <div class="item__content">
+								<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+								<span class="item__category">
+									<a href="#">Action</a>
+									<a href="#">Triler</a>
+								</span>
+							</div> -->
+						</div>
+					</div>
+					<!-- end item -->
+					 	<!-- item -->
+					<div class="col-6 col-sm-4 ">
+						<div class="item">
+							<div class="item__cover__gallery">
+								<img src="img\new-images\g-3.png" alt="">
+								<!-- <a href="details.html" class="item__play">
+									<i class="ti ti-player-play-filled"></i>
+								</a>
+								<span class="item__rate item__rate--green">8.4</span>
+								<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+							</div>
+							<!-- <div class="item__content">
+								<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+								<span class="item__category">
+									<a href="#">Action</a>
+									<a href="#">Triler</a>
+								</span>
+							</div> -->
+						</div>
+					</div>
+					<!-- end item -->
+					 	<!-- item -->
+					<div class="col-6 col-sm-4 ">
+						<div class="item">
+							<div class="item__cover__gallery">
+								<img src="img\new-images\g-4.png" alt="">
+								<!-- <a href="details.html" class="item__play">
+									<i class="ti ti-player-play-filled"></i>
+								</a>
+								<span class="item__rate item__rate--green">8.4</span>
+								<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+							</div>
+							<!-- <div class="item__content">
+								<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+								<span class="item__category">
+									<a href="#">Action</a>
+									<a href="#">Triler</a>
+								</span>
+							</div> -->
+						</div>
+					</div>
+					<!-- end item -->
+					 	<!-- item -->
+					<div class="col-6 col-sm-4 ">
+						<div class="item">
+							<div class="item__cover__gallery">
+								<img src="img\new-images\g-5.png" alt="">
+								<!-- <a href="details.html" class="item__play">
+									<i class="ti ti-player-play-filled"></i>
+								</a>
+								<span class="item__rate item__rate--green">8.4</span>
+								<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+							</div>
+							<!-- <div class="item__content">
+								<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+								<span class="item__category">
+									<a href="#">Action</a>
+									<a href="#">Triler</a>
+								</span>
+							</div> -->
+						</div>
+					</div>
+					<!-- end item -->
+					 	<!-- item -->
+					<div class="col-6 col-sm-4 ">
+						<div class="item">
+							<div class="item__cover__gallery">
+								<img src="img\new-images\g-6.png" alt="">
+								<!-- <a href="details.html" class="item__play">
+									<i class="ti ti-player-play-filled"></i>
+								</a>
+								<span class="item__rate item__rate--green">8.4</span>
+								<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+							</div>
+							<!-- <div class="item__content">
+								<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+								<span class="item__category">
+									<a href="#">Action</a>
+									<a href="#">Triler</a>
+								</span>
+							</div> -->
+						</div>
+					</div>
+					<!-- end item -->
+				<!-- item -->
+				<div class="col-6 col-sm-4 ">
+					<div class="item">
+						<div class="item__cover__gallery">
+							<img src="img\new-images\1.jpg" alt="">
+							<!-- <a href="details.html" class="item__play">
+								<i class="ti ti-player-play-filled"></i>
+							</a>
+							<span class="item__rate item__rate--green">8.4</span>
+							<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+						</div>
+						<!-- <div class="item__content">
+							<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+							<span class="item__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+						</div> -->
+					</div>
+				</div>
+				<!-- end item -->
+				 <!-- item -->
+				<div class="col-6 col-sm-4 ">
+					<div class="item">
+						<div class="item__cover__gallery">
+							<img src="img\new-images\2.jpg" alt="">
+							<!-- <a href="details.html" class="item__play">
+								<i class="ti ti-player-play-filled"></i>
+							</a>
+							<span class="item__rate item__rate--green">8.4</span>
+							<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+						</div>
+						<!-- <div class="item__content">
+							<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+							<span class="item__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+						</div> -->
+					</div>
+				</div>
+				<!-- end item -->
+				 <!-- item -->
+				<div class="col-6 col-sm-4 ">
+					<div class="item">
+						<div class="item__cover__gallery">
+							<img src="img\new-images\3.jpg" alt="">
+							<!-- <a href="details.html" class="item__play">
+								<i class="ti ti-player-play-filled"></i>
+							</a>
+							<span class="item__rate item__rate--green">8.4</span>
+							<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+						</div>
+						<!-- <div class="item__content">
+							<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+							<span class="item__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+						</div> -->
+					</div>
+				</div>
+				<!-- end item -->
+				 <!-- item -->
+				<div class="col-6 col-sm-4 ">
+					<div class="item">
+						<div class="item__cover__gallery">
+							<img src="img\new-images\4.jpg" alt="">
+							<!-- <a href="details.html" class="item__play">
+								<i class="ti ti-player-play-filled"></i>
+							</a>
+							<span class="item__rate item__rate--green">8.4</span>
+							<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+						</div>
+						<!-- <div class="item__content">
+							<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+							<span class="item__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+						</div> -->
+					</div>
+				</div>
+				<!-- end item -->
+				 <!-- item -->
+				<div class="col-6 col-sm-4 ">
+					<div class="item">
+						<div class="item__cover__gallery">
+							<img src="img/new-images/5.1" alt="">
+		
+						<!-- <a href="details.html" class="item__play">
+								<i class="ti ti-player-play-filled"></i>
+							</a>
+							<span class="item__rate item__rate--green">8.4</span>
+							<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+						</div>
+						<!-- <div class="item__content">
+							<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+							<span class="item__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+						</div> -->
+					</div>
+				</div>
+				<!-- end item -->
+				 <!-- item -->
+				<div class="col-6 col-sm-4 ">
+					<div class="item">
+						<div class="item__cover__gallery">
+							<img src="img\new-images\6.1" alt="">
+		
+						<!-- <a href="details.html" class="item__play">
+								<i class="ti ti-player-play-filled"></i>
+							</a>
+							<span class="item__rate item__rate--green">8.4</span>
+							<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+						</div>
+						<!-- <div class="item__content">
+							<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+							<span class="item__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+						</div> -->
+					</div>
+				</div>
+				<!-- end item -->
+				 <!-- item -->
+				<div class="col-6 col-sm-4 ">
+					<div class="item">
+						<div class="item__cover__gallery">
+							<img src="img\new-images\7.jpg" alt="">
+							<!-- <a href="details.html" class="item__play">
+								<i class="ti ti-player-play-filled"></i>
+							</a>
+							<span class="item__rate item__rate--green">8.4</span>
+							<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+						</div>
+						<!-- <div class="item__content">
+							<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+							<span class="item__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+						</div> -->
+					</div>
+				</div>
+				<!-- end item -->
+				 <!-- item -->
+				<div class="col-6 col-sm-4 ">
+					<div class="item">
+						<div class="item__cover__gallery">
+							<img src="img\new-images\8.1" alt="">
+		
+						<!-- <a href="details.html" class="item__play">
+								<i class="ti ti-player-play-filled"></i>
+							</a>
+							<span class="item__rate item__rate--green">8.4</span>
+							<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+						</div>
+						<!-- <div class="item__content">
+							<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+							<span class="item__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+						</div> -->
+					</div>
+				</div>
+				<!-- end item -->
+				 <!-- item -->
+				<div class="col-6 col-sm-4 ">
+					<div class="item">
+						<div class="item__cover__gallery">
+							<img src="img\new-images\9.1" alt="">
+		
+						<!-- <a href="details.html" class="item__play">
+								<i class="ti ti-player-play-filled"></i>
+							</a>
+							<span class="item__rate item__rate--green">8.4</span>
+							<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+						</div>
+						<!-- <div class="item__content">
+							<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+							<span class="item__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+						</div> -->
+					</div>
+				</div>
+				<!-- end item -->
+				 <!-- item -->
+				<div class="col-6 col-sm-4 ">
+					<div class="item">
+						<div class="item__cover__gallery">
+							<img src="img\new-images\10.jpg" alt="">
+						
+							<!-- <a href="details.html" class="item__play">
+								<i class="ti ti-player-play-filled"></i>
+							</a>
+							<span class="item__rate item__rate--green">8.4</span>
+							<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+						</div>
+						<!-- <div class="item__content">
+							<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+							<span class="item__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+						</div> -->
+					</div>
+				</div>
+				<!-- end item -->
+				 <!-- item -->
+				<div class="col-6 col-sm-4 ">
+					<div class="item">
+						<div class="item__cover__gallery">
+							<img src="img\new-images\11.jpg" alt="">
+						
+							<!-- <a href="details.html" class="item__play">
+								<i class="ti ti-player-play-filled"></i>
+							</a>
+							<span class="item__rate item__rate--green">8.4</span>
+							<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+						</div>
+						<!-- <div class="item__content">
+							<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+							<span class="item__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+						</div> -->
+					</div>
+				</div>
+				<!-- end item -->
+				 <!-- item -->
+				<div class="col-6 col-sm-4 ">
+					<div class="item">
+						<div class="item__cover__gallery">
+							<img src="img\new-images\12.jpg" alt="">
+						
+							<!-- <a href="details.html" class="item__play">
+								<i class="ti ti-player-play-filled"></i>
+							</a>
+							<span class="item__rate item__rate--green">8.4</span>
+							<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+						</div>
+						<!-- <div class="item__content">
+							<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+							<span class="item__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+						</div> -->
+					</div>
+				</div>
+				<!-- end item -->
+				 <!-- item -->
+				<div class="col-6 col-sm-4 ">
+					<div class="item">
+						<div class="item__cover__gallery">
+							<img src="img\new-images\13.jpg" alt="">
+						
+							<!-- <a href="details.html" class="item__play">
+								<i class="ti ti-player-play-filled"></i>
+							</a>
+							<span class="item__rate item__rate--green">8.4</span>
+							<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+						</div>
+						<!-- <div class="item__content">
+							<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+							<span class="item__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+						</div> -->
+					</div>
+				</div>
+				<!-- end item -->
+				 <!-- item -->
+				<div class="col-6 col-sm-4 ">
+					<div class="item">
+						<div class="item__cover__gallery">
+							<img src="img\new-images\14.jpg" alt="">
+						
+							<!-- <a href="details.html" class="item__play">
+								<i class="ti ti-player-play-filled"></i>
+							</a>
+							<span class="item__rate item__rate--green">8.4</span>
+							<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+						</div>
+						<!-- <div class="item__content">
+							<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+							<span class="item__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+						</div> -->
+					</div>
+				</div>
+				<!-- end item -->
+				 <!-- item -->
+				<div class="col-6 col-sm-4 ">
+					<div class="item">
+						<div class="item__cover__gallery">
+							<img src="img\new-images\15.jpg" alt="">
+						
+							<!-- <a href="details.html" class="item__play">
+								<i class="ti ti-player-play-filled"></i>
+							</a>
+							<span class="item__rate item__rate--green">8.4</span>
+							<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+						</div>
+						<!-- <div class="item__content">
+							<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+							<span class="item__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+						</div> -->
+					</div>
+				</div>
+				<!-- end item --><!-- item -->
+				<div class="col-6 col-sm-4 ">
+					<div class="item">
+						<div class="item__cover__gallery">
+							<img src="img\new-images\16.jpg" alt="">
+						
+							<!-- <a href="details.html" class="item__play">
+								<i class="ti ti-player-play-filled"></i>
+							</a>
+							<span class="item__rate item__rate--green">8.4</span>
+							<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+						</div>
+						<!-- <div class="item__content">
+							<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+							<span class="item__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+						</div> -->
+					</div>
+				</div>
+				<!-- end item -->
+				 <!-- item -->
+				<div class="col-6 col-sm-4 ">
+					<div class="item">
+						<div class="item__cover__gallery">
+							<img src="img\new-images\17.jpg" alt="">
+						
+							<!-- <a href="details.html" class="item__play">
+								<i class="ti ti-player-play-filled"></i>
+							</a>
+							<span class="item__rate item__rate--green">8.4</span>
+							<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+						</div>
+						<!-- <div class="item__content">
+							<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+							<span class="item__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+						</div> -->
+					</div>
+				</div>
+				<!-- end item -->
+				 <!-- item -->
+				<div class="col-6 col-sm-4 ">
+					<div class="item">
+						<div class="item__cover__gallery">
+							<img src="img\new-images\18.jpg" alt="">
+						
+							<!-- <a href="details.html" class="item__play">
+								<i class="ti ti-player-play-filled"></i>
+							</a>
+							<span class="item__rate item__rate--green">8.4</span>
+							<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button> -->
+						</div>
+						<!-- <div class="item__content">
+							<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+							<span class="item__category">
+								<a href="#">Action</a>
+								<a href="#">Triler</a>
+							</span>
+						</div> -->
+					</div>
+				</div>
+				<!-- end item -->
+			</div>
+
+			<!-- <div class="row"> -->
+				<!-- paginator -->
+				<!-- <div class="col-12"> -->
+					<!-- paginator mobile -->
+					<!-- <div class="paginator-mob">
+						<span class="paginator-mob__pages">18 of 1713</span>
+
+						<ul class="paginator-mob__nav">
+							<li>
+								<a href="#">
+									<i class="ti ti-chevron-left"></i>
+									<span>Prev</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Next</span>
+									<i class="ti ti-chevron-right"></i>
+								</a>
+							</li>
+						</ul>
+					</div> -->
+					<!-- end paginator mobile -->
+
+					<!-- paginator desktop -->
+					<!-- <ul class="paginator">
+						<li class="paginator__item paginator__item--prev">
+							<a href="#"><i class="ti ti-chevron-left"></i></a>
+						</li>
+						<li class="paginator__item"><a href="#">1</a></li>
+						<li class="paginator__item paginator__item--active"><a href="#">2</a></li>
+						<li class="paginator__item"><a href="#">3</a></li>
+						<li class="paginator__item"><a href="#">4</a></li>
+						<li class="paginator__item"><span>...</span></li>
+						<li class="paginator__item"><a href="#">87</a></li>
+						<li class="paginator__item paginator__item--next">
+							<a href="#"><i class="ti ti-chevron-right"></i></a>
+						</li>
+					</ul> -->
+					<!-- end paginator desktop -->
+				</div>
+				<!-- end paginator -->
+			</div>
+		</div>
+	</div>
+	<!-- end catalog -->
+	 <style>
+		.item__cover__gallery {
+    position: relative;
+    overflow: hidden; /* Ensure the zoomed-in image stays within bounds */
+}
+
+.item__cover__gallery img {
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth zooming transition */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image maintains its aspect ratio */
+}
+
+/* Apply zoom effect on hover */
+.item__cover__gallery:hover img {
+    transform: scale(1.3); /* Zoom in the image */
+    filter: brightness(0.8); /* Optional: darken image on hover */
+}
+
+	 </style>
+
+	<!-- section -->
+	<!-- <section class="section section--border">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<!-- <div class="col-12"> 
+					<div class="section__title-wrap">
+						<h2 class="section__title">Expected premiere</h2>
+						<a href="catalogCopy1.html" class="section__view section__view--carousel">View All</a>
+					</div>
+				</div> -->
+				<!-- end section title -->
+
+				<!-- carousel -->
+				<!-- <div class="col-12">
+					<div class="section__carousel splide splide--content">
+						<div class="splide__arrows">
+							<button class="splide__arrow splide__arrow--prev" type="button">
+								<i class="ti ti-chevron-left"></i>
+							</button>
+							<button class="splide__arrow splide__arrow--next" type="button">
+								<i class="ti ti-chevron-right"></i>
+							</button>
+						</div>
+
+						<div class="splide__track">
+							<ul class="splide__list">
+								<li class="splide__slide">
+									<div class="item item--carousel">
+										<div class="item__cover__gallery">
+											<img src="img\new-images\1.jpg" alt="">
+											<a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a>
+											<span class="item__rate item__rate--green">8.4</span>
+											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
+										</div>
+										<div class="item__content">
+											<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+											<span class="item__category">
+												<a href="#">Action</a>
+												<a href="#">Triler</a>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="splide__slide">
+									<div class="item item--carousel">
+										<div class="item__cover__gallery">
+											<img src="img\new-images\1.jpg" alt="">
+											<a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a>
+											<span class="item__rate item__rate--green">7.1</span>
+											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
+										</div>
+										<div class="item__content">
+											<h3 class="item__title"><a href="details.html">Benched</a></h3>
+											<span class="item__category">
+												<a href="#">Comedy</a>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="splide__slide">
+									<div class="item item--carousel">
+										<div class="item__cover__gallery">
+											<img src="img\new-images\1.jpg" alt="">
+											<a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a>
+											<span class="item__rate item__rate--red">6.3</span>
+											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
+										</div>
+										<div class="item__content">
+											<h3 class="item__title"><a href="details.html">Whitney</a></h3>
+											<span class="item__category">
+												<a href="#">Romance</a>
+												<a href="#">Drama</a>
+												<a href="#">Music</a>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="splide__slide">
+									<div class="item item--carousel">
+										<div class="item__cover__gallery">
+											<img src="img\new-images\1.jpg" alt="">
+											<a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a>
+											<span class="item__rate item__rate--yellow">6.9</span>
+											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
+										</div>
+										<div class="item__content">
+											<h3 class="item__title"><a href="details.html">Blindspotting</a></h3>
+											<span class="item__category">
+												<a href="#">Comedy</a>
+												<a href="#">Drama</a>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="splide__slide">
+									<div class="item item--carousel">
+										<div class="item__cover__gallery">
+											<img src="img\new-images\1.jpg" alt="">
+											<a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a>
+											<span class="item__rate item__rate--green">8.4</span>
+											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
+										</div>
+										<div class="item__content">
+											<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+											<span class="item__category">
+												<a href="#">Action</a>
+												<a href="#">Triler</a>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="splide__slide">
+									<div class="item item--carousel">
+										<div class="item__cover__gallery">
+											<img src="img\new-images\1.jpg" alt="">
+											<a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a>
+											<span class="item__rate item__rate--green">7.1</span>
+											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
+										</div>
+										<div class="item__content">
+											<h3 class="item__title"><a href="details.html">Benched</a></h3>
+											<span class="item__category">
+												<a href="#">Comedy</a>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="splide__slide">
+									<div class="item item--carousel">
+										<div class="item__cover__gallery">
+											<img src="img\new-images\1.jpg" alt="">
+											<a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a>
+											<span class="item__rate item__rate--green">7.1</span>
+											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
+										</div>
+										<div class="item__content">
+											<h3 class="item__title"><a href="details.html">Benched</a></h3>
+											<span class="item__category">
+												<a href="#">Comedy</a>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="splide__slide">
+									<div class="item item--carousel">
+										<div class="item__cover__gallery">
+											<img src="img\new-images\1.jpg" alt="">
+											<a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a>
+											<span class="item__rate item__rate--red">5.5</span>
+											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
+										</div>
+										<div class="item__content">
+											<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+											<span class="item__category">
+												<a href="#">Action</a>
+												<a href="#">Triler</a>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="splide__slide">
+									<div class="item item--carousel">
+										<div class="item__cover__gallery">
+											<img src="img\new-images\1.jpg" alt="">
+											<a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a>
+											<span class="item__rate item__rate--yellow">6.7</span>
+											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
+										</div>
+										<div class="item__content">
+											<h3 class="item__title"><a href="details.html">Blindspotting</a></h3>
+											<span class="item__category">
+												<a href="#">Comedy</a>
+												<a href="#">Drama</a>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="splide__slide">
+									<div class="item item--carousel">
+										<div class="item__cover__gallery">
+											<img src="img\new-images\1.jpg" alt="">
+											<a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a>
+											<span class="item__rate item__rate--red">5.6</span>
+											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
+										</div>
+										<div class="item__content">
+											<h3 class="item__title"><a href="details.html">Whitney</a></h3>
+											<span class="item__category">
+												<a href="#">Romance</a>
+												<a href="#">Drama</a>
+												<a href="#">Music</a>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="splide__slide">
+									<div class="item item--carousel">
+										<div class="item__cover__gallery">
+											<img src="img\new-images\1.jpg" alt="">
+											<a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a>
+											<span class="item__rate item__rate--green">9.2</span>
+											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
+										</div>
+										<div class="item__content">
+											<h3 class="item__title"><a href="details.html">Benched</a></h3>
+											<span class="item__category">
+												<a href="#">Comedy</a>
+											</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="splide__slide">
+									<div class="item item--carousel">
+										<div class="item__cover__gallery">
+											<img src="img\new-images\1.jpg" alt="">
+											<a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a>
+											<span class="item__rate item__rate--green">8.4</span>
+											<button class="item__favorite" type="button"><i class="ti ti-bookmark"></i></button>
+										</div>
+										<div class="item__content">
+											<h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3>
+											<span class="item__category">
+												<a href="#">Action</a>
+												<a href="#">Triler</a>
+											</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div> -->
+				<!-- end carousel -->
+			</div>
+		</div>
+	</section>
+	<!-- end section -->
+
+	<!-- footer -->
+
+	<!-- end footer -->
+
+	<!-- mobile filter -->
+	<!-- <div class="mfilter">
+		<div class="mfilter__head">
+			<h6 class="mfilter__title">Filter</h6>
+
+			<button class="mfilter__close" type="button"><i class="ti ti-x"></i></button>
+		</div> -->
+
+		<!-- <div class="mfilter__select-wrap">
+			<div class="sign__group">
+				<select class="filter__select" name="mgenre" id="mfilter__genre">
+					<option value="0">All genres</option>
+					<option value="1">Action/Adventure</option>
+					<option value="2">Animals</option>
+					<option value="3">Animation</option>
+					<option value="4">Biography</option>
+					<option value="5">Comedy</option>
+					<option value="6">Cooking</option>
+					<option value="7">Dance</option>
+					<option value="8">Documentary</option>
+					<option value="9">Drama</option>
+					<option value="10">Education</option>
+					<option value="11">Entertainment</option>
+					<option value="12">Family</option>
+					<option value="13">Fantasy</option>
+					<option value="14">History</option>
+					<option value="15">Horror</option>
+					<option value="16">Independent</option>
+					<option value="17">International</option>
+					<option value="18">Kids</option>
+					<option value="19">Medical</option>
+					<option value="20">Military/War</option>
+					<option value="21">Music</option>
+					<option value="22">Mystery/Crime</option>
+					<option value="23">Nature</option>
+					<option value="24">Paranormal</option>
+					<option value="25">Politics</option>
+					<option value="26">Racing</option>
+					<option value="27">Romance</option>
+					<option value="28">Sci-Fi/Horror</option>
+					<option value="29">Science</option>
+					<option value="30">Science Fiction</option>
+					<option value="31">Science/Nature</option>
+					<option value="32">Spanish</option>
+					<option value="33">Travel</option>
+					<option value="34">Western</option>
+				</select>
+			</div>
+
+			<div class="sign__group">
+				<select class="filter__select" name="mquality" id="mfilter__quality">
+					<option value="0">Any quality</option>
+					<option value="1">HD 1080</option>
+					<option value="2">HD 720</option>
+					<option value="3">DVD</option>
+					<option value="4">TS</option>
+				</select>
+			</div>
+
+			<div class="sign__group">
+				<select class="filter__select" name="mrate" id="mfilter__rate">
+					<option value="0">Any rating</option>
+					<option value="1">from 3.0</option>
+					<option value="2">from 5.0</option>
+					<option value="3">from 7.0</option>
+					<option value="4">Golder Star</option>
+				</select>
+			</div>
+
+			<div class="sign__group">
+				<select class="filter__select" name="msort" id="mfilter__sort">
+					<option value="0">Relevance</option>
+					<option value="1">Newest</option>
+					<option value="2">Oldest</option>
+				</select>
+			</div>
+		</div> -->
+
+		<!-- <button class="mfilter__apply" type="button">Apply</button>
+	</div> -->
+	<!-- end mobile filter -->
+
+	<footer class="footer">
+		<div class="footer-content">
+		  <aside class="footer-brand">
+			<div class="footer-icon p-0">
+			  <a href="index.html"><img src="img/new-images/logooo.png" alt="image"></a>
+			</div>
+			<p class="brand-text">
+			  Bharat Gaurav Samman
+			  <br />
+			  <!-- Providing reliable atoms since 1945. -->
+			</p>
+		  </aside>
+		  <nav>
+			<h6 class="footer-heading">Follow Us</h6>
+			<a href="#" class="footer-link">Facebook</a>
+			<a href="#" class="footer-link">Twitter</a>
+			<a href="#" class="footer-link">Linkedin</a>
+			<a href="#" class="footer-link">Instagram</a>
+		  </nav>
+		  <nav>
+			<h6 class="footer-heading">Quick Links</h6>
+			<a href="index.html" class="footer-link">Home</a>
+			<a href="catalogCopy.html" class="footer-link">Videos</a>
+			<a href="catalogCopy1.html" class="footer-link">Gallery</a>
+			<!-- <a href="index.html" class="footer-link">Contact</a> -->
+		  </nav>
+		  <nav>
+			<h6 class="footer-heading">Legal</h6>
+			<a class="footer-link">Terms of use</a>
+			<a class="footer-link">Privacy policy</a>
+			<a class="footer-link">Cookie policy</a>
+		  </nav>
+		</div>
+	  </footer>
+	  <div class="footer-bottom">
+		<p>&copy; Copyright Bharat Gaurav Samman, All rights reserved. Designed by BTPL</p>
+	  </div>
+	  
+	  <style>
+		:root {
+		  /* Colors */
+		  /* --primary-bg: #333333; */
+		  --text-light: #fff;
+		  --text-muted: #bdbdbd;
+		  --accent: #D4B754;
+	  
+		  /* Fonts */
+		  --font-heading: 'Bodoni Moda', serif;
+		  --font-body: 'Raleway', sans-serif;
+	  
+		  /* Font sizes */
+		  --text-xl: 1.5rem;
+		  --text-base: 1rem;
+		  --text-sm: 0.875rem;
+	  
+		  /* Spacing */
+		  --spacing-xl: 80px;
+		  --spacing-lg: 40px;
+		  --spacing-md: 20px;
+		  --spacing-sm: 12px;
+		}
+	  
+		.footer {
+		  width: 100vw;
+		  background-color: var(--primary-bg);
+		  padding: var(--spacing-lg) 0;
+		  margin-top: var(--spacing-xl);
+		}
+		.footer-brand {
+		  display: flex;
+		  flex-direction: column;
+		  /* gap: var(--spacing-sm); */
+		}
+		.footer-icon img {
+		  display: inline-block;
+		  width: 140px;
+		  margin-left: 60px;
+		  /* height: 75px; */
+		  /* background-image: url("main/img/new-images/bg-logo.png"); */
+		  /* background-color: var(--text-light); */
+		  /* -webkit-mask-image: var(--svg); */
+		  /* mask-image: var(--svg); */
+		  /* -webkit-mask-repeat: no-repeat; */
+		  /* mask-repeat: no-repeat; */
+		  /* -webkit-mask-size: 100% 100%; */
+		  /* mask-size: 100% 100%; */
+		}
+		.brand-text {
+		  /* color: var(--text-light); */
+		  color: #D4B754;
+		  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		  /* font-size: var(--text-sm); */
+		  font-weight: 700;
+		  font-size: 30px;
+		  line-height: 1.6;
+		}
+		.footer-content {
+		  display: flex;
+		  justify-content: space-between;
+		  max-width: 1200px;
+		  margin: 0 auto;
+		  padding: 0 var(--spacing-xl); /* Increased padding */
+		  gap: var(--spacing-xl);
+		}
+		.footer nav {
+		  display: flex;
+		  flex-direction: column;
+		  gap: var(--spacing-sm);
+		}
+		.footer-heading {
+		  color: var(--text-light);
+		  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		  /* font-size: var(--text-base); */
+		  font-size: 22px;
+		  font-weight: 600;
+		  text-transform: uppercase;
+		  margin-bottom: var(--spacing-sm);
+		}
+		.footer-link {
+		  color: var(--text-muted);
+		  text-decoration: none;
+		  cursor: pointer;
+		  /* font-size: var(--text-sm); */
+		  font-size: 17px;
+		  font-family: var(--font-body), sans-serif;
+		}
+		.footer-link:hover {
+		  color: var(--accent);
+		  text-decoration: underline;
+		}
+		.footer-bottom {
+		  background-color: #D4B754;
+		}
+	  
+		.footer-bottom p {
+		  text-align: center;
+		  padding: 10px;
+		  color: #330202;
+		  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		  font-size: 18px;
+		}
+	  
+		@media (max-width: 768px) {
+		  .footer-content {
+			flex-direction: column;
+			gap: var(--spacing-lg);
+			padding: var(--spacing-md);
+		  }
+		  .footer-brand {
+			align-items: center;
+			text-align: center;
+		  }
+		}
+	  </style>
+
+
+	<!-- JS -->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/splide.min.js"></script>
+	<script src="js/slimselect.min.js"></script>
+	<script src="js/smooth-scrollbar.js"></script>
+	<script src="js/plyr.min.js"></script>
+	<script src="js/photoswipe.min.js"></script>
+	<script src="js/photoswipe-ui-default.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+<!-- Mirrored from hotflix.volkovdesign.com/main/catalog.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Dec 2024 00:41:03 GMT -->
+</html>

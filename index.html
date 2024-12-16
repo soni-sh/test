@@ -1,0 +1,2314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from hotflix.volkovdesign.com/main/index3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Dec 2024 00:40:39 GMT -->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/splide.min.css">
+	<link rel="stylesheet" href="css/slimselect.css">
+	<link rel="stylesheet" href="css/plyr.css">
+	<link rel="stylesheet" href="css/photoswipe.css">
+	<link rel="stylesheet" href="css/default-skin.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+	<!-- Icon font -->
+	<link rel="stylesheet" href="webfont/tabler-icons.min.css">
+
+	<!-- Font Awesome CDN -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" href="img/new-images/logooo.png" sizes="64x64">
+	<!-- <link rel="apple-touch-icon" href="icon/favicon-32x32.png"> -->
+
+	<meta name="description" content="Online Movies, TV Shows & Cinema HTML Template">
+	<meta name="keywords" content="">
+	<meta name="author" content="Dmitry Volkov">
+	<title>Gaurav Bharat Samman</title>
+</head>
+
+<body>
+	<div class="container nav">
+		<a href="index.html"><img src="img/new-images/logooo.png" alt="Logo" class="logo"></a>
+		<h1>भारत गौरव सम्मान <br>Bharat Gaurav Samman</h1>
+	</div>
+
+	<style>
+		.nav {
+			display: flex;
+			align-items: center;
+			/* Vertically center the items */
+			justify-content: center;
+			/* Horizontally center the items */
+			flex-wrap: wrap;
+			/* Ensure items wrap on smaller screens */
+			/* padding: 10px; Optional, for spacing */
+		}
+
+		.nav h1 {
+			color: #fff;
+			font-family: "Roboto", sans-serif;
+			text-align: center;
+			/* Center the text */
+			margin: 0 10px;
+			/* Add some space between the logo and text */
+		}
+
+		.logo {
+			width: 150px;
+			height: auto;
+		}
+
+		/* Adjust the layout for screens with a max width of 375px */
+		@media (max-width: 375px) {
+			.nav {
+				flex-direction: row;
+				/* Display items in a row */
+				align-items: center;
+				/* Center items vertically */
+				justify-content: center;
+				/* Center items horizontally */
+			}
+
+			.logo {
+				width: 80px !important;
+				/* Adjust the logo size for smaller screens */
+			}
+
+			.nav h1 {
+				font-size: 1.2rem;
+				/* Adjust the font size for smaller screens */
+				margin-left: 10px;
+				/* Add some space between the logo and the text */
+			}
+		}
+
+		/* Make the layout more responsive */
+		@media (max-width: 768px) {
+			.nav {
+				flex-direction: row;
+				/* Ensure the logo and text are in a row on mobile */
+				justify-content: flex-start;
+				/* Align to the left side */
+			}
+
+			.logo {
+				width: 120px;
+				/* Adjust the logo size for smaller screens */
+			}
+
+			.nav h1 {
+				font-size: 1.2rem;
+				/* Adjust the font size for smaller screens */
+				margin-left: 10px;
+				/* Add some space between the logo and the text */
+			}
+		}
+	</style>
+
+
+	<header>
+		<!-- Menu Bar -->
+		<div class="menu-bar">
+			<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+			<div id="menu" class="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="">Awards</a></li>
+					<li class="menuu-toggle">
+						<a class="menu-toggle dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							Gallery
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="catalogCopy1.html">Photos</a></li>
+							<li><a class="dropdown-item" href="catalogCopy.html">Videos</a></li>
+						</ul>
+					</li>
+					<li><a href="catalogCopy1.html">Category</a></li>
+					<li><a href="#">Directors & Team</a></li>
+					<li><a href="contactUs.html">Contact</a></li>
+					<li><a href="#">Testimonials</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<style>
+			/* General Reset */
+			/* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+
+			/* Menu Bar Styling */
+			.menu-bar {
+				position: fixed;
+				top: 45px;
+				right: 22px;
+				background-color: #333;
+				width: 40px;
+				height: auto;
+				/* padding:5px; */
+				display: flex;
+				justify-content: center;
+				z-index: 1000;
+				border-radius: 5px;
+			}
+
+			.menu-toggle {
+				font-size: 25px;
+				color: white;
+				/* color: #333; */
+				background: none;
+				border: none;
+				cursor: pointer;
+			}
+
+			.menu {
+				display: none;
+				position: absolute;
+				top: 50px;
+				right: 0px;
+				background-color: #333;
+				padding: 10px;
+				border-radius: 5px;
+			}
+
+			.menu ul {
+				list-style-type: none;
+			}
+
+			.menu ul li {
+				margin: 10px 0;
+			}
+
+			.menu ul li a {
+				color: white;
+				text-decoration: none;
+				font-size: 18px;
+			}
+
+			.dropdown-menu {
+				background: #333;
+			}
+
+			#navbarDropdown ul li a {
+				color: #fff;
+				text-decoration: none;
+				font-size: 18px;
+			}
+
+			.menu ul li a:hover {
+				color: #f1c40f;
+			}
+
+			/* Content Styling */
+			.content {
+				padding: 50px;
+				margin-top: 50px;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+
+			/* Responsive Styling */
+			@media screen and (max-width: 375px) {
+				.menu-bar {
+					position: fixed;
+					top: 35px;
+					right: 15px;
+					background-color: #333;
+					width: 35px;
+					height: auto;
+					/* padding:5px; */
+					display: flex;
+					justify-content: center;
+					z-index: 1000;
+					border-radius: 5px;
+				}
+			}
+		</style>
+
+		<!-- Page Content -->
+		<!-- <div class="content">
+        <h1>Welcome to My Website</h1>
+        <p>Click the menu icon to view the menu.</p>
+    </div> -->
+
+		<script>
+			// Function to toggle the menu visibility
+			function toggleMenu() {
+				var menu = document.getElementById('menu');
+				if (menu.style.display === 'block') {
+					menu.style.display = 'none';
+				} else {
+					menu.style.display = 'block';
+				}
+			}
+		</script>
+	</header>
+
+	<!-- marquee -->
+	<article class="main-container__marquee">
+		<div class="main-container__marquee-track">
+			<div class="main-container__marquee-items">
+				<span class="main-container__marquee-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+					Corrupti, distinctio laboriosam sit excepturi maxime veritatis, quam quas unde voluptatum explicabo
+					sequi nam dolorem ipsum delectus id impedit ab exercitationem porro? consectetur adipisicing
+					elit</span>
+				<span class="main-container__marquee-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+					Corrupti, distinctio laboriosam sit excepturi maxime veritatis, quam quas unde voluptatum explicabo
+					sequi nam dolorem ipsum delectus id impedit ab exercitationem porro?</span>
+				<span class="main-container__marquee-item">Lorem, ipsum dolor sit amet consectetur adipisicing
+					elit</span>
+			</div>
+			<div aria-hidden="true" class="main-container__marquee-items">
+				<span class="main-container__marquee-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+					Corrupti, distinctio laboriosam sit excepturi maxime veritatis, quam quas unde voluptatum explicabo
+					sequi nam dolorem ipsum delectus id impedit ab exercitationem porro? consectetur </span>
+				<span class="main-container__marquee-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+					Corrupti, distinctio laboriosam sit excepturi maxime veritatis, quam quas unde voluptatum explicabo
+					sequi nam dolorem ipsum delectus id impedit ab exercitationem porro?</span>
+				<span class="main-container__marquee-item">Lorem, ipsum dolor sit amet consectetur adipisicing
+					elit</span>
+			</div>
+		</div>
+	</article>
+
+	<!-- end marquee -->
+
+	<!-- header -->
+	<!-- <header class="header"> -->
+	<!-- <div class="container-fluid"> -->
+	<!-- <div class="row"> -->
+	<!-- <div class="col-12"> -->
+	<!-- <div class="header__content"> -->
+	<!-- header logo -->
+	<!-- <a href="index.html" class="header__logo">
+							<img src="img/logo.svg" alt="">
+						</a> -->
+	<!-- <a href="indexx.html"> -->
+	<!-- <img src="#" alt="image"> -->
+	<!-- </a> -->
+	<!-- end header logo -->
+
+	<!-- header nav -->
+	<!-- <ul class="header__nav"> -->
+	<!-- dropdown -->
+	<!-- <li class="header__nav-item"> -->
+	<!-- <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home <i class="ti ti-chevron-down"></i></a>
+
+								<ul class="dropdown-menu header__dropdown-menu">
+									<li><a href="index.html">Home style 1</a></li>
+									<li><a href="index2.html">Home style 2</a></li>
+									<li><a href="index3.html">Home style 3</a></li>
+                                    <li><a href="indexx.html">Home style 4</a></li>
+								</ul>
+							</li> -->
+	<!-- end dropdown -->
+
+	<!-- dropdown -->
+	<!-- <li class="header__nav-item">
+								<a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catalog <i class="ti ti-chevron-down"></i></a>
+
+								<ul class="dropdown-menu header__dropdown-menu">
+                                    <li><a href="catalogCopy.html">Catalog style</a></li>
+									<li><a href="catalog.html">Catalog style 1</a></li>
+									<li><a href="catalog2.html">Catalog style 2</a></li>
+									<li><a href="details.html">Details Movie</a></li>
+									<li><a href="details2.html">Details TV Series</a></li>
+								</ul>
+							</li> -->
+	<!-- end dropdown -->
+
+	<!-- <li class="header__nav-item">
+								<a href="pricing.html" class="header__nav-link">Pricing plan</a>
+							</li>
+
+							<!-- dropdown -->
+	<!-- <li class="header__nav-item">
+								<a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages <i class="ti ti-chevron-down"></i></a>
+
+								<ul class="dropdown-menu header__dropdown-menu">
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="profile.html">Profile</a></li>
+									<li><a href="actor.html">Actor</a></li>
+									<li><a href="#">Contacts</a></li>
+									<li><a href="faq.html">Help center</a></li>
+									<li><a href="privacy.html">Privacy policy</a></li>
+									<li><a href="https://hotflix.volkovdesign.com/admin/index.html" target="_blank">Admin pages</a></li>
+								</ul>
+							</li> -->
+	<!-- end dropdown -->
+
+	<!-- dropdown -->
+	<!-- <li class="header__nav-item">
+								<a class="header__nav-link header__nav-link--more" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="ti ti-dots"></i></a>
+
+								<ul class="dropdown-menu header__dropdown-menu">
+									<li><a href="signin.html">Sign in</a></li>
+									<li><a href="signup.html">Sign up</a></li>
+									<li><a href="forgot.html">Forgot password</a></li>
+									<li><a href="404.html">404 Page</a></li>
+								</ul>
+							</li> -->
+	<!-- end dropdown -->
+	<!-- </ul> 
+						 end header nav 
+
+						 header auth 
+						 <div class="header__auth"> 
+							 <form action="#" class="header__search"> 
+								 <input class="header__search-input" type="text" placeholder="Search..."> 
+								 <button class="header__search-button" type="button"> 
+									 <i class="ti ti-search"></i> 
+								 </button> 
+								 <button class="header__search-close" type="button"> 
+									 <i class="ti ti-x"></i> 
+								 </button> 
+							 </form> 
+
+							 <button class="header__search-btn" type="button"> 
+								 <i class="ti ti-search"></i> 
+							 </button> 
+
+							 dropdown 
+							 <div class="header__lang"> 
+								 <a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">EN <i class="ti ti-chevron-down"></i></a> -->
+
+	<!-- <ul class="dropdown-menu header__dropdown-menu">
+									<li><a href="#">English</a></li>
+									<li><a href="#">Spanish</a></li>
+									<li><a href="#">French</a></li>
+								</ul> -->
+	<!-- </div> -->
+	<!-- end dropdown -->
+
+	<!-- dropdown -->
+	<!-- <div class="header__profile">
+								<a class="header__sign-in header__sign-in--user" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<i class="ti ti-user"></i>
+									<span>Nickname</span>
+								</a>
+
+								<ul class="dropdown-menu dropdown-menu-end header__dropdown-menu header__dropdown-menu--user">
+									<li><a href="profile.html"><i class="ti ti-ghost"></i>Profile</a></li>
+									<li><a href="profile.html"><i class="ti ti-stereo-glasses"></i>Subscription</a></li>
+									<li><a href="profile.html"><i class="ti ti-bookmark"></i>Favorites</a></li>
+									<li><a href="profile.html"><i class="ti ti-settings"></i>Settings</a></li>
+									<li><a href="#"><i class="ti ti-logout"></i>Logout</a></li>
+								</ul>
+							</div> -->
+	<!-- end dropdown -->
+	<!-- </div> -->
+	<!-- end header auth -->
+
+	<!-- header menu btn -->
+	<!-- <button class="header__btn" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button> -->
+	<!-- end header menu btn -->
+	<!-- </div>
+				</div>
+			</div>
+		</div>
+	</header> -->
+	<!-- end header -->
+
+
+
+	<!-- home -->
+	<section class="banner">
+		<div class="container-fluid p-0">
+		  <div class="row">
+			<!-- Hero Carousel -->
+			<div class="col-12">
+			  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img src="img/new-images/bannerABC.png" class="d-block w-100" alt="Slide 1">
+				  </div>
+				  <div class="carousel-item">
+					<img src="img/new-images/14.png" class="d-block w-100" alt="Slide 2">
+				  </div>
+				  <div class="carousel-item">
+					<img src="img/new-images/15.png" class="d-block w-100" alt="Slide 3">
+				  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
+			</div>
+			<!-- Hero Carousel -->
+		  </div>
+		</div>
+	  </section>
+	  <style>
+		/* Style the carousel control buttons */
+.carousel-control-prev, .carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5); /* Dark background with transparency */
+  border-radius: 50%; /* Round buttons */
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  top: 50%;
+}
+
+/* Add some shadow for a better effect */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: white; /* White arrow icons */
+  border-radius: 50%;
+  /* padding: 10px; */
+}
+
+/* Change button background on hover */
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background-color: rgba(223, 173, 10, 0.7); /* Darker background on hover */
+  transform: scale(1.1); /* Scale up on hover for an interactive effect */
+}
+
+/* Make the arrows more prominent */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+}
+
+.carousel-control-prev {
+  left: 15px;
+}
+
+.carousel-control-next {
+  right: 15px;
+}
+
+
+
+/* Mobile responsiveness: Adjust button size on smaller screens */
+@media (max-width: 768px) {
+  .carousel-control-prev, .carousel-control-next {
+    width: 40px;  /* Smaller button size */
+    height: 40px;
+    padding: 8px;
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 24px;  /* Smaller icon size */
+    height: 24px;
+    background-size: 24px 24px;
+  }
+}
+
+/* Extra small mobile devices (portrait) */
+@media (max-width: 480px) {
+  .carousel-control-prev, .carousel-control-next {
+    width: 35px;  /* Even smaller button size */
+    height: 35px;
+    padding: 6px;
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 20px;  /* Even smaller icon size */
+    height: 20px;
+    background-size: 20px 20px;
+  }
+}
+
+	  </style>
+	  
+	
+	
+	
+
+	<!-- end home -->
+
+	<!-- fixed filter wrap -->
+	<!-- <div> -->
+
+	<button class="filter__menu" type="button">
+		<!-- <i class="ti ti-filter"></i> -->
+	</button>
+
+
+
+	<!-- </div> -->
+	<!-- end fixed filter wrap -->
+
+
+
+	<section class="para">
+		<div class="container">
+			<div class="row">
+				<div class="paragraph">
+					<p>
+						The attempt is to motivate the awardees to redouble their efforts in the service of the country,
+						and also, by example, encourage millions of others to emulate them and do their bit to build a
+						New India of our dreams.
+						We leverage the keys of self-confidence, motivation, trust, encouragement and reward to enthuse
+						ordinary people to make extraordinary achievements in the service of our beloved motherland.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <hr style="border: 2px solid;"> -->
+
+	<!-- section -->
+	<section class="section section--border ">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-12">
+					<div class="section__title-wrap" style="margin-bottom:24px ;">
+						<!-- <h2 class="section__title">Videos</h2> -->
+						<a href="catalogCopy.html" class="section__view section__view--carousel">See All</a>
+					</div>
+				</div>
+				<!-- end section title -->
+
+				<!-- carousel -->
+				<div class="col-12">
+					<div class="section__caarousel splide splide--content">
+						<!-- <div class="splide__arrows">
+							<button class="splide__arrow splide__arrow--prev" type="button">
+								<i class="ti ti-chevron-left"></i>
+							</button>
+							<button class="splide__arrow splide__arrow--next" type="button">
+								<i class="ti ti-chevron-right"></i>
+							</button>
+						</div> -->
+
+						<div class="splide__track">
+							<ul class="splide__list">
+								<li class="splide__slide">
+									<div class="item item--carousel">
+										<div class="item__cover">
+											<div class="video-gallery">
+												<div class="video-item">
+													<video controls autoplay muted>
+														<source src="img/new-images/v-1.mp4" type="video/mp4">
+														<!-- Fallback for unsupported formats -->
+														Your browser does not support the video tag.
+													</video>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item item--carousel">
+										<div class="item__cover">
+											<div class="video-gallery">
+												<div class="video-item">
+													<video controls autoplay muted>
+														<source src="img/new-images/v-2.mp4" type="video/mp4">
+														<!-- Fallback for unsupported formats -->
+														Your browser does not support the video tag.
+													</video>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="section__caarousel splide splide--content">
+						<!-- <div class="splide__arrows">
+							<button class="splide__arrow splide__arrow--prev" type="button">
+								<i class="ti ti-chevron-left"></i>
+							</button>
+							<button class="splide__arrow splide__arrow--next" type="button">
+								<i class="ti ti-chevron-right"></i>
+							</button>
+						</div> -->
+
+						<div class="splide__track">
+							<ul class="splide__list">
+								<li class="splide__slide">
+									<div class="item item--carousel">
+										<div class="item__cover">
+											<div class="video-gallery">
+												<div class="video-item">
+													<video controls autoplay muted>
+														<source src="img/new-images/v-3.mp4" type="video/mp4">
+														<!-- Fallback for unsupported formats -->
+														Your browser does not support the video tag.
+													</video>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item item--carousel">
+										<div class="item__cover">
+											<div class="video-gallery">
+												<div class="video-item">
+													<video controls autoplay muted>
+														<source src="img/new-images/v-4.mp4" type="video/mp4">
+														<!-- Fallback for unsupported formats -->
+														Your browser does not support the video tag.
+													</video>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end carousel -->
+			</div>
+		</div>
+	</section>
+	<!-- end section -->
+
+
+
+
+
+
+
+
+	<!-- marquee -->
+	<!-- <article class="main-container__marquee">
+            <div class="main-container__marquee-track">
+                <div class="main-container__marquee-items">
+                    <span class="main-container__marquee-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, distinctio laboriosam sit excepturi maxime veritatis, quam quas unde voluptatum explicabo sequi nam dolorem ipsum delectus id impedit ab exercitationem porro? consectetur adipisicing elit</span>
+                    <span class="main-container__marquee-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, distinctio laboriosam sit excepturi maxime veritatis, quam quas unde voluptatum explicabo sequi nam dolorem ipsum delectus id impedit ab exercitationem porro?</span>
+                    <span class="main-container__marquee-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit</span>
+                </div>
+                <div aria-hidden="true" class="main-container__marquee-items">
+                    <span class="main-container__marquee-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, distinctio laboriosam sit excepturi maxime veritatis, quam quas unde voluptatum explicabo sequi nam dolorem ipsum delectus id impedit ab exercitationem porro? consectetur</span>
+                    <span class="main-container__marquee-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, distinctio laboriosam sit excepturi maxime veritatis, quam quas unde voluptatum explicabo sequi nam dolorem ipsum delectus id impedit ab exercitationem porro?</span>
+                    <span class="main-container__marquee-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit</span>
+                </div>
+            </div>
+        </article> -->
+
+	<!-- end marquee -->
+
+	<button class="download-button text-center">
+		<div class="docs">
+		  Nominate Yourself
+		</div>
+		<a href="javascript:void(0)" class="whatsapp" onclick="window.open('https://wa.me/1234567890', '_blank');">
+		  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+			<path fill="#fff" d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"></path>
+			<path fill="#fff" d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"></path>
+			<path fill="#cfd8dc" d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"></path>
+			<path fill="#40c351" d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"></path>
+			<path fill="#fff" fill-rule="evenodd" d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z" clip-rule="evenodd"></path>
+		  </svg>
+		</a>
+	  </button>
+	  
+	
+	<style>
+		/* Center the button on the page */
+		.download-button {
+			position: relative;
+			display:flex;
+			align-items: center ;
+			justify-content: center;
+			width: 100%;
+			max-width: 350px; /* Adjust button width */
+			margin: 5px auto;
+			border-width: 0;
+			color: white;
+			font-size: 22px; /* Adjust text size */
+			font-weight: 600;
+			cursor: pointer;
+			border-radius: 5px;
+			flex-direction: column;
+			animation: blink 1s infinite;
+			/* padding: 10px 0px; */
+			padding-top: 20px !important;
+		}
+
+	/* Styling the main button area */
+.download-button .docs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px; /* Adjust button height */
+  padding: 18px 80px; /* Adjust padding */
+  border-radius: 48px 0px;
+  /* background: linear-gradient(45deg, #f1c40f,  #F8E39C,#650a81, #f1c40f,#801e1e, #fcc203,#650a81, #f1c40f); */
+  color: #111; /* Text color */
+  font-weight: 500;
+  font-size: 28x;
+  /* border: solid 1px #e8e8e82d; */
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  font-family: "Lobster", sans-serif;
+  /* background:  linear-gradient(45deg, #000000, #f39c12, #f1c40f, #000000); */
+  background: linear-gradient(45deg, #f1c40f,  #F8E39C, #f1c40f, #F8E39C, #f1c40f);
+	border: 3px solid khaki;
+}
+
+/* Hover effect for the button */
+.download-button:hover .docs {
+	background-color: rgb(15, 133, 11);
+	border: 3px solid khaki;
+	/* background: linear-gradient(45deg, #000000, #f39c12, #f1c40f, #000000);  */
+  /* background: linear-gradient(45deg, #f1c40f,  #F8E39C,#650a81, #f1c40f,#801e1e, #fcc203,#650a81, #f1c40f); Reversed gradient for hover effect */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Add a glowing shadow */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* WhatsApp icon hidden by default */
+.whatsapp {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 40px; /* Adjust WhatsApp icon size */
+  margin: 0 auto;
+  z-index: 1;
+  border-radius: 50%; /* Circle shape */
+  transform: translateY(0%);
+  opacity: 0; /* Initially hidden */
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* Hover effect for displaying WhatsApp icon */
+.download-button:hover .whatsapp {
+  transform: translateY(100%);
+  opacity: 1; /* Show WhatsApp icon on hover */
+}
+
+		/* Hover effect for displaying WhatsApp icon */
+		.download-button:hover .whatsapp {
+			transform: translateY(100%);
+			opacity: 1; /* Show WhatsApp icon on hover */
+		}
+	
+		/* Blink effect for WhatsApp icon */
+		@keyframes blink {
+			0% {
+				opacity: 0.5;
+			}
+			50% {
+				opacity: 1;
+			}
+			100% {
+				opacity: 0.5;
+			}
+		}
+	
+		/* Media query for mobile devices */
+		@media (max-width: 600px) {
+			.download-button {
+				max-width: 90%; /* Make the button more responsive on small screens */
+			}
+	
+			.download-button .docs {
+        padding: 5px 30px;
+        font-size: 21px;
+    }
+	
+			.whatsapp {
+				max-width: 35px; /* Adjust WhatsApp icon size on mobile */
+			}
+			/* Hover effect for displaying WhatsApp icon */
+		.download-button:hover .whatsapp {
+			transform: translateY(100%);
+			opacity: 1; /* Show WhatsApp icon on hover */
+		}
+	
+		/* Blink effect for WhatsApp icon */
+		@keyframes blink {
+			0% {
+				opacity: 0.5;
+			}
+			50% {
+				opacity: 1;
+			}
+			100% {
+				opacity: 0.5;
+			}
+		}
+		}
+	</style>
+	
+
+	<section>
+		<div class="container one">
+		  <div class="row text-center">
+			<h1>Create Own Category</h1>
+		  </div>
+		  <div class="row">
+			<!-- First Column -->
+			<div class="col-lg-6 col-md-6 col-6">
+			  <div class="categoryOne">
+				<ul>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Teacher</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Doctor</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Lab Technician</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Principal</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Ayurvedic Practitioner</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Homopathic Doctor</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Physiotherapist</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Othropadician</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Coaching Classes</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Yoga Teacher</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Enterpreneur</li></a>
+					<a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Event Manager</li></a>
+					<a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Institution</li></a>
+				  
+				 
+				</ul>
+			  </div>
+			</div>
+	  
+			<!-- Second Column -->
+			<div class="col-lg-6 col-md-6 col-6">
+			  <div class="categoryOne">
+				<ul>
+					<a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Medical Representative</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Pharmacist</li></a>
+					<a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Hotel Services</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Resturant</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Pathology</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Nursing</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Poet</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Writer</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Artist</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Dancer</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Singer</li></a>
+					<a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Comedian</li></a>
+					<a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Editor</li></a>
+				 
+				
+				</ul>
+			  </div>
+			</div>
+	  
+			<!-- Third Column -->
+			<div class="col-lg-6 col-md-6 col-6">
+			  <div class="categoryOne">
+				<ul>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Youtuber</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Influencer</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Bussiness Man</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">NGO Trust</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Social Worker</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Social Media Management</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Web Development</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Seo Expert</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">IT Services</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Police Service</li></a>
+				 
+				</ul>
+			  </div>
+			</div>
+	  
+			<!-- Fourth Column -->
+			<div class="col-lg-6 col-md-6 col-6">
+			  <div class="categoryOne">
+				<ul>
+					
+					
+					<a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">News Report</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">News Channel</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Boutique</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Fashion Designer</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Photographer</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Tour & Travels</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Politician</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Advocate</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Chatter Accountant</li></a>
+				  <a href="contactUs.html"><li><img src="img/new-images/next.png" alt="">Government Official</li></a>
+				  
+				  
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+<style>
+	
+	.one h1{
+		color: #fff;
+		font-family: serif;
+		padding: 20px 10px;
+
+	}
+
+.categoryOne a img {
+  padding-right: 5px;
+}
+
+.categoryOne a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.categoryOne a:hover {
+  color: #ffa722d2;
+}
+
+
+
+</style>
+
+	<!-- section -->
+	<div class="container">
+		<div class="row">
+			<!-- section title -->
+			<div class="col-12">
+				<div class="section__title-wrap">
+					<!-- <h2 class="section__title">Gallery</h2> -->
+					<a href="catalogCopy1.html" class="section__view section__view--carousel">See All</a>
+				</div>
+			</div>
+			<!-- end section title -->
+
+			<!-- carousel -->
+			<div class="col-12">
+				<div class="section__carousel  splide splide--content">
+					<!-- <div class="splide__arrows">
+						<button class="splide__arrow splide__arrow--prev" type="button">
+							<i class="ti ti-chevron-left"></i>
+						</button>
+						<button class="splide__arrow splide__arrow--next" type="button">
+							<i class="ti ti-chevron-right"></i>
+						</button>
+					</div> -->
+
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide">
+								<div class="item item--carousel">
+									<div class="item__cover__gallery">
+										<img src="img/new-images/g-1.png" alt="">
+										<!-- <a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a> -->
+										<!-- <span class="item__rate item__rate--green">8.4</span> -->
+										<!-- <button class="item__favorite" type="button"><i
+												class="ti ti-bookmark"></i></button> -->
+									</div>
+									<div class="item__content">
+										<!-- <h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3> -->
+										<!-- <span class="item__category">
+												<a href="#">Action</a>
+												<a href="#">Triler</a>
+											</span> -->
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div class="item item--carousel">
+									<div class="item__cover__gallery">
+										<img src="img/new-images/g-2.png" alt="">
+										<!-- <a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a> -->
+										<!-- <span class="item__rate item__rate--green">8.4</span> -->
+										<!-- <button class="item__favorite" type="button"><i
+												class="ti ti-bookmark"></i></button> -->
+									</div>
+									<div class="item__content">
+										<!-- <h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3> -->
+										<!-- <span class="item__category">
+												<a href="#">Action</a>
+												<a href="#">Triler</a>
+											</span> -->
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div class="item item--carousel">
+									<div class="item__cover__gallery">
+										<img src="img/new-images/g-3.png" alt="">
+										<!-- <a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a> -->
+										<!-- <span class="item__rate item__rate--green">8.4</span> -->
+										<!-- <button class="item__favorite" type="button"><i
+												class="ti ti-bookmark"></i></button> -->
+									</div>
+									<div class="item__content">
+										<!-- <h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3> -->
+										<!-- <span class="item__category">
+												<a href="#">Action</a>
+												<a href="#">Triler</a>
+											</span> -->
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div class="item item--carousel">
+									<div class="item__cover__gallery">
+										<img src="img/new-images/g-4.png" alt="">
+										<!-- <a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a> -->
+										<!-- <span class="item__rate item__rate--green">8.4</span> -->
+										<!-- <button class="item__favorite" type="button"><i
+												class="ti ti-bookmark"></i></button> -->
+									</div>
+									<div class="item__content">
+										<!-- <h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3> -->
+										<!-- <span class="item__category">
+												<a href="#">Action</a>
+												<a href="#">Triler</a>
+											</span> -->
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div class="item item--carousel">
+									<div class="item__cover__gallery">
+										<img src="img/new-images/g-5.png" alt="">
+										<!-- <a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a> -->
+										<!-- <span class="item__rate item__rate--green">8.4</span> -->
+										<!-- <button class="item__favorite" type="button"><i
+												class="ti ti-bookmark"></i></button> -->
+									</div>
+									<div class="item__content">
+										<!-- <h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3> -->
+										<!-- <span class="item__category">
+												<a href="#">Action</a>
+												<a href="#">Triler</a>
+											</span> -->
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div class="item item--carousel">
+									<div class="item__cover__gallery">
+										<img src="img/new-images/g-6.png" alt="">
+										<!-- <a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a> -->
+										<!-- <span class="item__rate item__rate--green">8.4</span> -->
+										<!-- <button class="item__favorite" type="button"><i
+												class="ti ti-bookmark"></i></button> -->
+									</div>
+									<div class="item__content">
+										<!-- <h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3> -->
+										<!-- <span class="item__category">
+												<a href="#">Action</a>
+												<a href="#">Triler</a>
+											</span> -->
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div class="item item--carousel">
+									<div class="item__cover__gallery">
+										<img src="img/new-images/g-7.png" alt="">
+										<!-- <a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a> -->
+										<!-- <span class="item__rate item__rate--green">8.4</span> -->
+										<!-- <button class="item__favorite" type="button"><i
+												class="ti ti-bookmark"></i></button> -->
+									</div>
+									<div class="item__content">
+										<!-- <h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3> -->
+										<!-- <span class="item__category">
+												<a href="#">Action</a>
+												<a href="#">Triler</a>
+											</span> -->
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div class="item item--carousel">
+									<div class="item__cover__gallery">
+										<img src="img/new-images/1.jpg" alt="">
+										<!-- <a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a> -->
+										<!-- <span class="item__rate item__rate--green">8.4</span> -->
+										<!-- <button class="item__favorite" type="button"><i
+												class="ti ti-bookmark"></i></button> -->
+									</div>
+									<div class="item__content">
+										<!-- <h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3> -->
+										<!-- <span class="item__category">
+												<a href="#">Action</a>
+												<a href="#">Triler</a>
+											</span> -->
+									</div>
+								</div>
+							</li>
+
+							<li class="splide__slide">
+								<div class="item item--carousel">
+									<div class="item__cover__gallery">
+										<img src="img/new-images/10.jpg" alt="">
+										<!-- <a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a> -->
+										<!-- <span class="item__rate item__rate--green">7.1</span> -->
+										<!-- <button class="item__favorite" type="button"><i
+												class="ti ti-bookmark"></i></button> -->
+									</div>
+									<div class="item__content">
+										<!-- <h3 class="item__title"><a href="details.html">Benched</a></h3> -->
+										<!-- <span class="item__category">
+												<a href="#">Comedy</a>
+											</span>
+										</div>
+									</div> -->
+							</li>
+
+							<li class="splide__slide">
+								<div class="item item--carousel">
+									<div class="item__cover__gallery">
+										<img src="img/new-images/11.jpg" alt="">
+										<!-- <a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a> -->
+										<!-- <span class="item__rate item__rate--red">6.3</span> -->
+										<!-- <button class="item__favorite" type="button"><i
+												class="ti ti-bookmark"></i></button> -->
+									</div>
+									<div class="item__content">
+										<!-- <h3 class="item__title"><a href="details.html">Whitney</a></h3> -->
+										<!-- <span class="item__category">
+												<a href="#">Romance</a>
+												<a href="#">Drama</a>
+												<a href="#">Music</a> -->
+										</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="splide__slide">
+								<div class="item item--carousel">
+									<div class="item__cover__gallery">
+										<img src="img/new-images/12.jpg" alt="">
+										<!-- <a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a> -->
+										<!-- <span class="item__rate item__rate--yellow">6.9</span> -->
+										<!-- <button class="item__favorite" type="button"><i
+												class="ti ti-bookmark"></i></button> -->
+									</div>
+									<div class="item__content">
+										<!-- <h3 class="item__title"><a href="details.html">Blindspotting</a></h3> -->
+										<!-- <span class="item__category">
+												<a href="#">Comedy</a>
+												<a href="#">Drama</a>
+											</span> -->
+									</div>
+								</div>
+							</li>
+
+							<li class="splide__slide">
+								<div class="item item--carousel">
+									<div class="item__cover__gallery">
+										<img src="img/new-images/2.jpg" alt="">
+										<!-- <a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a> -->
+										<!-- <span class="item__rate item__rate--green">8.4</span> -->
+										<!-- <button class="item__favorite" type="button"><i
+												class="ti ti-bookmark"></i></button> -->
+									</div>
+									<div class="item__content">
+										<!-- <h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3> -->
+										<!-- <span class="item__category">
+												<a href="#">Action</a>
+												<a href="#">Triler</a>
+											</span> -->
+									</div>
+								</div>
+							</li>
+
+							<li class="splide__slide">
+								<div class="item item--carousel">
+									<div class="item__cover__gallery">
+										<img src="img/new-images/3.jpg" alt="">
+										<!-- <a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a> -->
+										<!-- <span class="item__rate item__rate--green">7.1</span> -->
+										<!-- <button class="item__favorite" type="button"><i
+												class="ti ti-bookmark"></i></button> -->
+									</div>
+									<div class="item__content">
+										<!-- <h3 class="item__title"><a href="details.html">Benched</a></h3> -->
+										<!-- <span class="item__category">
+												<a href="#">Comedy</a>
+											</span>
+										</div>
+									</div> -->
+							</li>
+
+							<li class="splide__slide">
+								<div class="item item--carousel">
+									<div class="item__cover__gallery">
+										<img src="img/new-images/4.jpg" alt="">
+										<!-- <a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a> -->
+										<!-- <span class="item__rate item__rate--green">7.1</span> -->
+										<!-- <button class="item__favorite" type="button"><i
+												class="ti ti-bookmark"></i></button> -->
+									</div>
+									<div class="item__content">
+										<!-- <h3 class="item__title"><a href="details.html">Benched</a></h3> -->
+										<!-- <span class="item__category">
+												<a href="#">Comedy</a>
+											</span>
+										</div>
+									</div> -->
+							</li>
+
+							<li class="splide__slide">
+								<div class="item item--carousel">
+									<div class="item__cover__gallery">
+										<img src="img/new-images/5.jpg" alt="">
+										<!-- <a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a> -->
+										<!-- <span class="item__rate item__rate--red">5.5</span> -->
+										<!-- <button class="item__favorite" type="button"><i
+												class="ti ti-bookmark"></i></button> -->
+									</div>
+									<div class="item__content">
+										<!-- <h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3> -->
+										<!-- <span class="item__category">
+												<a href="#">Action</a>
+												<a href="#">Triler</a>
+											</span> -->
+									</div>
+								</div>
+							</li>
+
+							<li class="splide__slide">
+								<div class="item item--carousel">
+									<div class="item__cover__gallery">
+										<img src="img/new-images/6.jpg" alt="">
+										<!-- <a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a> -->
+										<!-- <span class="item__rate item__rate--yellow">6.7</span> -->
+										<!-- <button class="item__favorite" type="button"><i
+												class="ti ti-bookmark"></i></button> -->
+									</div>
+									<div class="item__content">
+										<!-- <h3 class="item__title"><a href="details.html">Blindspotting</a></h3> -->
+										<!-- <span class="item__category">
+												<a href="#">Comedy</a>
+												<a href="#">Drama</a>
+											</span> -->
+									</div>
+								</div>
+							</li>
+
+							<li class="splide__slide">
+								<div class="item item--carousel">
+									<div class="item__cover__gallery">
+										<img src="img/new-images/7.jpg" alt="">
+										<!-- <a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a> -->
+										<!-- <span class="item__rate item__rate--red">5.6</span> -->
+										<!-- <button class="item__favorite" type="button"><i
+												class="ti ti-bookmark"></i></button> -->
+									</div>
+									<div class="item__content">
+										<!-- <h3 class="item__title"><a href="details.html">Whitney</a></h3> -->
+										<!-- <span class="item__category">
+												<a href="#">Romance</a>
+												<a href="#">Drama</a>
+												<a href="#">Music</a> -->
+										</span>
+									</div>
+								</div>
+							</li>
+
+							<li class="splide__slide">
+								<div class="item item--carousel">
+									<div class="item__cover__gallery">
+										<img src="img/new-images/8.jpg" alt="">
+										<!-- <a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a> -->
+										<!-- <span class="item__rate item__rate--green">9.2</span> -->
+										<!-- <button class="item__favorite" type="button"><i
+												class="ti ti-bookmark"></i></button> -->
+									</div>
+									<div class="item__content">
+										<!-- <h3 class="item__title"><a href="details.html">Benched</a></h3> -->
+										<!-- <span class="item__category">
+												<a href="#">Comedy</a>
+											</span>
+										</div>
+									</div> -->
+							</li>
+
+							<li class="splide__slide">
+								<div class="item item--carousel">
+									<div class="item__cover__gallery">
+										<img src="img/new-images/9.jpg" alt="">
+										<!-- <a href="details.html" class="item__play">
+												<i class="ti ti-player-play-filled"></i>
+											</a> -->
+										<!-- <span class="item__rate item__rate--green">8.4</span> -->
+										<!-- <button class="item__favorite" type="button"><i
+												class="ti ti-bookmark"></i></button> -->
+									</div>
+									<div class="item__content">
+										<!-- <h3 class="item__title"><a href="details.html">I Dream in Another Language</a></h3> -->
+										<!-- <span class="item__category">
+												<a href="#">Action</a>
+												<a href="#">Triler</a>
+											</span> -->
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- end carousel -->
+		</div>
+	</div>
+	</section>
+	<hr style="border-bottom: 2px solid #eee;">
+	<!-- end section -->
+
+
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="director">
+					<h1>About Directors</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="directors-section">
+					<!-- Director 1 -->
+					<div class="director-card">
+						<img src="https://via.placeholder.com/200" alt="Director 1">
+						<h3>John Doe</h3>
+						<p>
+							John Doe is an award-winning director known for his innovative storytelling and captivating visual style.
+							With over 20 years in the industry, his films have received numerous accolades for their unique approach to cinematography and narrative depth.
+						</p>
+						<!-- <p class="bio">
+							"Cinema is not just about making films; it's about telling stories that resonate with audiences on a personal level." 
+							- John Doe
+						</p> -->
+						<!-- <div class="projects">
+							<h4>Notable Projects:</h4>
+							<ul>
+								<li>Epic Journey (2023)</li>
+								<li>Silent Nights (2021)</li>
+								<li>The Visionary (2019)</li>
+							</ul>
+						</div> -->
+					</div>
+			
+					<!-- Director 2 -->
+					<div class="director-card">
+						<img src="https://via.placeholder.com/200" alt="Director 2">
+						<h3>Jane Smith</h3>
+						<p>
+							Jane Smith is known for her bold, thought-provoking films. Her work often explores complex human emotions and societal issues, winning several international film festival awards.
+						</p>
+						<!-- <p class="bio">
+							"Films are a window into the human experience, a way to share stories that have the power to change the world." 
+							- Jane Smith
+						</p> -->
+						<!-- <div class="projects">
+							<h4>Notable Projects:</h4>
+							<ul>
+								<li>The Last Breath (2022)</li>
+								<li>Shadows of Truth (2020)</li>
+								<li>The Edge of Tomorrow (2018)</li>
+							</ul>
+						</div> -->
+					</div>
+			
+					<!-- Director 3 -->
+					<div class="director-card">
+						<img src="https://via.placeholder.com/200" alt="Director 3">
+						<h3>Sam Lee</h3>
+						<p>
+							Sam Lee has a reputation for visually stunning films that combine science fiction with deep philosophical themes, exploring the human connection to technology and the future.
+						</p>
+						<!-- <p class="bio">
+							"My films are a reflection of our society, a way to explore where we are and where we may be headed." 
+							- Sam Lee
+						</p> -->
+						<!-- <div class="projects">
+							<h4>Notable Projects:</h4>
+							<ul>
+								<li>Beyond the Stars (2023)</li>
+								<li>Techno Dream (2021)</li>
+								<li>Inception of Ideas (2017)</li>
+							</ul>
+						</div> -->
+					</div>
+			
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr style="border: 1px solid#eee;">
+	
+	<style>
+		.director h1{
+			color: #fff;
+			text-align: center;
+			font-family: serif;
+
+		}
+
+        /* Container for the Directors Section */
+        .directors-section {
+            /* padding: 40px; */
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Flexible grid */
+            gap: 20px;
+            justify-items: center;
+            background-color: none;
+            margin-top: 20px;
+        }
+
+        .director-card {
+            background: none;
+            /* padding: 20px; */
+            /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+			/* border: 2px solid ; */
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease-out;
+            width: 100%;
+            max-width: 350px;
+            margin-bottom: 20px;
+        }
+
+        .director-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .director-card img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .director-card img:hover {
+            transform: scale(1.1);
+        }
+
+        .director-card h3 {
+            font-size: 1.8em;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .director-card p {
+            font-size: 1.1em;
+            color: #fff;
+            margin-bottom: 20px;
+            max-width: 600px;
+        }
+
+        .director-card .bio {
+            font-style: italic;
+            color: #fff;
+            font-size: 1.1em;
+        }
+
+        .director-card .projects {
+            font-weight: bold;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .director-card .projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .director-card .projects ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .director-card img {
+                width: 180px;
+                height: 180px;
+            }
+
+            .director-card h3 {
+                font-size: 1.5em;
+            }
+
+            .director-card p {
+                font-size: 1em;
+            }
+
+            .director-card .projects ul li {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .director-card img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .director-card h3 {
+                font-size: 1.3em;
+            }
+
+            .director-card p {
+                font-size: 0.9em;
+            }
+
+            .director-card .projects ul li {
+                font-size: 0.9em;
+            }
+
+            .directors-section {
+                padding: 20px;
+            }
+        }
+    </style>
+	
+
+
+	<!-- testimonial section -->
+	<section class="testimonial-section" id="testimonials">
+		<div class="container">
+			<h2 class="section-title">Testimonials</h2>
+			<div class="swiper testimonial-wrapper grid-col-3">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide testimonial-items">
+						<div class="testimonial-img tm-img-1">
+							<img src="img\new-images\profile.png" alt="">
+						</div>
+						<p class="testimonial-text">Discovering Be Better was a game-changer! Their unmatched
+							expertise skyrocketed my online
+							presence and credibility.
+							Highly recommended</p>
+						<h3 class="testimonial-title">Amy</h3>
+						<div class="review-stars">
+							<svg width="200" height="32" viewBox="0 0 200 32" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M17.6056 2.77777C17.3111 2.16666 16.6889 1.77777 16.0056 1.77777C15.3222 1.77777 14.7056 2.16666 14.4056 2.77777L10.8333 10.1278L2.85556 11.3055C2.18889 11.4055 1.63333 11.8722 1.42778 12.5111C1.22222 13.15 1.38889 13.8555 1.86667 14.3278L7.65556 20.0555L6.28889 28.15C6.17778 28.8167 6.45556 29.4944 7.00556 29.8889C7.55556 30.2833 8.28333 30.3333 8.88333 30.0167L16.0111 26.2111L23.1389 30.0167C23.7389 30.3333 24.4667 30.2889 25.0167 29.8889C25.5667 29.4889 25.8444 28.8167 25.7333 28.15L24.3611 20.0555L30.15 14.3278C30.6278 13.8555 30.8 13.15 30.5889 12.5111C30.3778 11.8722 29.8278 11.4055 29.1611 11.3055L21.1778 10.1278L17.6056 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M59.6056 2.77777C59.3111 2.16666 58.6889 1.77777 58.0056 1.77777C57.3222 1.77777 56.7056 2.16666 56.4056 2.77777L52.8333 10.1278L44.8556 11.3055C44.1889 11.4055 43.6333 11.8722 43.4278 12.5111C43.2222 13.15 43.3889 13.8555 43.8667 14.3278L49.6556 20.0555L48.2889 28.15C48.1778 28.8167 48.4556 29.4944 49.0056 29.8889C49.5556 30.2833 50.2833 30.3333 50.8833 30.0167L58.0111 26.2111L65.1389 30.0167C65.7389 30.3333 66.4667 30.2889 67.0167 29.8889C67.5667 29.4889 67.8444 28.8167 67.7333 28.15L66.3611 20.0555L72.15 14.3278C72.6278 13.8555 72.8 13.15 72.5889 12.5111C72.3778 11.8722 71.8278 11.4055 71.1611 11.3055L63.1778 10.1278L59.6056 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M101.606 2.77777C101.311 2.16666 100.689 1.77777 100.006 1.77777C99.3222 1.77777 98.7056 2.16666 98.4056 2.77777L94.8333 10.1278L86.8556 11.3055C86.1889 11.4055 85.6333 11.8722 85.4278 12.5111C85.2222 13.15 85.3889 13.8555 85.8667 14.3278L91.6556 20.0555L90.2889 28.15C90.1778 28.8167 90.4556 29.4944 91.0056 29.8889C91.5556 30.2833 92.2833 30.3333 92.8833 30.0167L100.011 26.2111L107.139 30.0167C107.739 30.3333 108.467 30.2889 109.017 29.8889C109.567 29.4889 109.844 28.8167 109.733 28.15L108.361 20.0555L114.15 14.3278C114.628 13.8555 114.8 13.15 114.589 12.5111C114.378 11.8722 113.828 11.4055 113.161 11.3055L105.178 10.1278L101.606 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M143.606 2.77777C143.311 2.16666 142.689 1.77777 142.006 1.77777C141.322 1.77777 140.706 2.16666 140.406 2.77777L136.833 10.1278L128.856 11.3055C128.189 11.4055 127.633 11.8722 127.428 12.5111C127.222 13.15 127.389 13.8555 127.867 14.3278L133.656 20.0555L132.289 28.15C132.178 28.8167 132.456 29.4944 133.006 29.8889C133.556 30.2833 134.283 30.3333 134.883 30.0167L142.011 26.2111L149.139 30.0167C149.739 30.3333 150.467 30.2889 151.017 29.8889C151.567 29.4889 151.844 28.8167 151.733 28.15L150.361 20.0555L156.15 14.3278C156.628 13.8555 156.8 13.15 156.589 12.5111C156.378 11.8722 155.828 11.4055 155.161 11.3055L147.178 10.1278L143.606 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M185.606 2.77777C185.311 2.16666 184.689 1.77777 184.006 1.77777C183.322 1.77777 182.706 2.16666 182.406 2.77777L178.833 10.1278L170.856 11.3055C170.189 11.4055 169.633 11.8722 169.428 12.5111C169.222 13.15 169.389 13.8555 169.867 14.3278L175.656 20.0555L174.289 28.15C174.178 28.8167 174.456 29.4944 175.006 29.8889C175.556 30.2833 176.283 30.3333 176.883 30.0167L184.011 26.2111L191.139 30.0167C191.739 30.3333 192.467 30.2889 193.017 29.8889C193.567 29.4889 193.844 28.8167 193.733 28.15L192.361 20.0555L198.15 14.3278C198.628 13.8555 198.8 13.15 198.589 12.5111C198.378 11.8722 197.828 11.4055 197.161 11.3055L189.178 10.1278L185.606 2.77777Z"
+									fill="#D4B754" />
+							</svg>
+
+						</div>
+					</div>
+					<div class="swiper-slide testimonial-items">
+						<div class="testimonial-img tm-img-2">
+							<img src="img\new-images\profile.png" alt="">
+						</div>
+						<p class="testimonial-text">Thanks to Be Better, I've unlocked my true potential and
+							transformed how others perceive me. Their tailored strategies
+							are a must for anyone looking to stand out!</p>
+						<h3 class="testimonial-title">Jhon</h3>
+						<div class="review-stars">
+							<svg width="200" height="32" viewBox="0 0 200 32" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M17.6056 2.77777C17.3111 2.16666 16.6889 1.77777 16.0056 1.77777C15.3222 1.77777 14.7056 2.16666 14.4056 2.77777L10.8333 10.1278L2.85556 11.3055C2.18889 11.4055 1.63333 11.8722 1.42778 12.5111C1.22222 13.15 1.38889 13.8555 1.86667 14.3278L7.65556 20.0555L6.28889 28.15C6.17778 28.8167 6.45556 29.4944 7.00556 29.8889C7.55556 30.2833 8.28333 30.3333 8.88333 30.0167L16.0111 26.2111L23.1389 30.0167C23.7389 30.3333 24.4667 30.2889 25.0167 29.8889C25.5667 29.4889 25.8444 28.8167 25.7333 28.15L24.3611 20.0555L30.15 14.3278C30.6278 13.8555 30.8 13.15 30.5889 12.5111C30.3778 11.8722 29.8278 11.4055 29.1611 11.3055L21.1778 10.1278L17.6056 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M59.6056 2.77777C59.3111 2.16666 58.6889 1.77777 58.0056 1.77777C57.3222 1.77777 56.7056 2.16666 56.4056 2.77777L52.8333 10.1278L44.8556 11.3055C44.1889 11.4055 43.6333 11.8722 43.4278 12.5111C43.2222 13.15 43.3889 13.8555 43.8667 14.3278L49.6556 20.0555L48.2889 28.15C48.1778 28.8167 48.4556 29.4944 49.0056 29.8889C49.5556 30.2833 50.2833 30.3333 50.8833 30.0167L58.0111 26.2111L65.1389 30.0167C65.7389 30.3333 66.4667 30.2889 67.0167 29.8889C67.5667 29.4889 67.8444 28.8167 67.7333 28.15L66.3611 20.0555L72.15 14.3278C72.6278 13.8555 72.8 13.15 72.5889 12.5111C72.3778 11.8722 71.8278 11.4055 71.1611 11.3055L63.1778 10.1278L59.6056 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M101.606 2.77777C101.311 2.16666 100.689 1.77777 100.006 1.77777C99.3222 1.77777 98.7056 2.16666 98.4056 2.77777L94.8333 10.1278L86.8556 11.3055C86.1889 11.4055 85.6333 11.8722 85.4278 12.5111C85.2222 13.15 85.3889 13.8555 85.8667 14.3278L91.6556 20.0555L90.2889 28.15C90.1778 28.8167 90.4556 29.4944 91.0056 29.8889C91.5556 30.2833 92.2833 30.3333 92.8833 30.0167L100.011 26.2111L107.139 30.0167C107.739 30.3333 108.467 30.2889 109.017 29.8889C109.567 29.4889 109.844 28.8167 109.733 28.15L108.361 20.0555L114.15 14.3278C114.628 13.8555 114.8 13.15 114.589 12.5111C114.378 11.8722 113.828 11.4055 113.161 11.3055L105.178 10.1278L101.606 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M143.606 2.77777C143.311 2.16666 142.689 1.77777 142.006 1.77777C141.322 1.77777 140.706 2.16666 140.406 2.77777L136.833 10.1278L128.856 11.3055C128.189 11.4055 127.633 11.8722 127.428 12.5111C127.222 13.15 127.389 13.8555 127.867 14.3278L133.656 20.0555L132.289 28.15C132.178 28.8167 132.456 29.4944 133.006 29.8889C133.556 30.2833 134.283 30.3333 134.883 30.0167L142.011 26.2111L149.139 30.0167C149.739 30.3333 150.467 30.2889 151.017 29.8889C151.567 29.4889 151.844 28.8167 151.733 28.15L150.361 20.0555L156.15 14.3278C156.628 13.8555 156.8 13.15 156.589 12.5111C156.378 11.8722 155.828 11.4055 155.161 11.3055L147.178 10.1278L143.606 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M185.606 2.77777C185.311 2.16666 184.689 1.77777 184.006 1.77777C183.322 1.77777 182.706 2.16666 182.406 2.77777L178.833 10.1278L170.856 11.3055C170.189 11.4055 169.633 11.8722 169.428 12.5111C169.222 13.15 169.389 13.8555 169.867 14.3278L175.656 20.0555L174.289 28.15C174.178 28.8167 174.456 29.4944 175.006 29.8889C175.556 30.2833 176.283 30.3333 176.883 30.0167L184.011 26.2111L191.139 30.0167C191.739 30.3333 192.467 30.2889 193.017 29.8889C193.567 29.4889 193.844 28.8167 193.733 28.15L192.361 20.0555L198.15 14.3278C198.628 13.8555 198.8 13.15 198.589 12.5111C198.378 11.8722 197.828 11.4055 197.161 11.3055L189.178 10.1278L185.606 2.77777Z"
+									fill="#D4B754" />
+							</svg>
+
+						</div>
+					</div>
+					<div class="swiper-slide testimonial-items">
+						<div class="testimonial-img tm-img-3">
+							<img src="img\new-images\profile.png" alt="">
+						</div>
+						<p class="testimonial-text">Working with Be Better, was one of the best career decisions
+							I've made. Their dedication resulted in a brand identity
+							that truly resonates with my audience. Invest in your personal brand with them – you
+							won't regret it!</p>
+						<h3 class="testimonial-title">Katie</h3>
+						<div class="review-stars">
+							<svg width="200" height="32" viewBox="0 0 200 32" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M17.6056 2.77777C17.3111 2.16666 16.6889 1.77777 16.0056 1.77777C15.3222 1.77777 14.7056 2.16666 14.4056 2.77777L10.8333 10.1278L2.85556 11.3055C2.18889 11.4055 1.63333 11.8722 1.42778 12.5111C1.22222 13.15 1.38889 13.8555 1.86667 14.3278L7.65556 20.0555L6.28889 28.15C6.17778 28.8167 6.45556 29.4944 7.00556 29.8889C7.55556 30.2833 8.28333 30.3333 8.88333 30.0167L16.0111 26.2111L23.1389 30.0167C23.7389 30.3333 24.4667 30.2889 25.0167 29.8889C25.5667 29.4889 25.8444 28.8167 25.7333 28.15L24.3611 20.0555L30.15 14.3278C30.6278 13.8555 30.8 13.15 30.5889 12.5111C30.3778 11.8722 29.8278 11.4055 29.1611 11.3055L21.1778 10.1278L17.6056 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M59.6056 2.77777C59.3111 2.16666 58.6889 1.77777 58.0056 1.77777C57.3222 1.77777 56.7056 2.16666 56.4056 2.77777L52.8333 10.1278L44.8556 11.3055C44.1889 11.4055 43.6333 11.8722 43.4278 12.5111C43.2222 13.15 43.3889 13.8555 43.8667 14.3278L49.6556 20.0555L48.2889 28.15C48.1778 28.8167 48.4556 29.4944 49.0056 29.8889C49.5556 30.2833 50.2833 30.3333 50.8833 30.0167L58.0111 26.2111L65.1389 30.0167C65.7389 30.3333 66.4667 30.2889 67.0167 29.8889C67.5667 29.4889 67.8444 28.8167 67.7333 28.15L66.3611 20.0555L72.15 14.3278C72.6278 13.8555 72.8 13.15 72.5889 12.5111C72.3778 11.8722 71.8278 11.4055 71.1611 11.3055L63.1778 10.1278L59.6056 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M101.606 2.77777C101.311 2.16666 100.689 1.77777 100.006 1.77777C99.3222 1.77777 98.7056 2.16666 98.4056 2.77777L94.8333 10.1278L86.8556 11.3055C86.1889 11.4055 85.6333 11.8722 85.4278 12.5111C85.2222 13.15 85.3889 13.8555 85.8667 14.3278L91.6556 20.0555L90.2889 28.15C90.1778 28.8167 90.4556 29.4944 91.0056 29.8889C91.5556 30.2833 92.2833 30.3333 92.8833 30.0167L100.011 26.2111L107.139 30.0167C107.739 30.3333 108.467 30.2889 109.017 29.8889C109.567 29.4889 109.844 28.8167 109.733 28.15L108.361 20.0555L114.15 14.3278C114.628 13.8555 114.8 13.15 114.589 12.5111C114.378 11.8722 113.828 11.4055 113.161 11.3055L105.178 10.1278L101.606 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M143.606 2.77777C143.311 2.16666 142.689 1.77777 142.006 1.77777C141.322 1.77777 140.706 2.16666 140.406 2.77777L136.833 10.1278L128.856 11.3055C128.189 11.4055 127.633 11.8722 127.428 12.5111C127.222 13.15 127.389 13.8555 127.867 14.3278L133.656 20.0555L132.289 28.15C132.178 28.8167 132.456 29.4944 133.006 29.8889C133.556 30.2833 134.283 30.3333 134.883 30.0167L142.011 26.2111L149.139 30.0167C149.739 30.3333 150.467 30.2889 151.017 29.8889C151.567 29.4889 151.844 28.8167 151.733 28.15L150.361 20.0555L156.15 14.3278C156.628 13.8555 156.8 13.15 156.589 12.5111C156.378 11.8722 155.828 11.4055 155.161 11.3055L147.178 10.1278L143.606 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M185.606 2.77777C185.311 2.16666 184.689 1.77777 184.006 1.77777C183.322 1.77777 182.706 2.16666 182.406 2.77777L178.833 10.1278L170.856 11.3055C170.189 11.4055 169.633 11.8722 169.428 12.5111C169.222 13.15 169.389 13.8555 169.867 14.3278L175.656 20.0555L174.289 28.15C174.178 28.8167 174.456 29.4944 175.006 29.8889C175.556 30.2833 176.283 30.3333 176.883 30.0167L184.011 26.2111L191.139 30.0167C191.739 30.3333 192.467 30.2889 193.017 29.8889C193.567 29.4889 193.844 28.8167 193.733 28.15L192.361 20.0555L198.15 14.3278C198.628 13.8555 198.8 13.15 198.589 12.5111C198.378 11.8722 197.828 11.4055 197.161 11.3055L189.178 10.1278L185.606 2.77777Z"
+									fill="#D4B754" />
+							</svg>
+
+						</div>
+					</div>
+
+					<div class="swiper-slide testimonial-items">
+						<div class="testimonial-img tm-img-1">
+							<img src="img\new-images\profile.png" alt="">
+						</div>
+						<p class="testimonial-text">Discovering Be Better was a game-changer! Their unmatched
+							expertise skyrocketed my online
+							presence and credibility.
+							Highly recommended</p>
+						<h3 class="testimonial-title">Amy</h3>
+						<div class="review-stars">
+							<svg width="200" height="32" viewBox="0 0 200 32" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M17.6056 2.77777C17.3111 2.16666 16.6889 1.77777 16.0056 1.77777C15.3222 1.77777 14.7056 2.16666 14.4056 2.77777L10.8333 10.1278L2.85556 11.3055C2.18889 11.4055 1.63333 11.8722 1.42778 12.5111C1.22222 13.15 1.38889 13.8555 1.86667 14.3278L7.65556 20.0555L6.28889 28.15C6.17778 28.8167 6.45556 29.4944 7.00556 29.8889C7.55556 30.2833 8.28333 30.3333 8.88333 30.0167L16.0111 26.2111L23.1389 30.0167C23.7389 30.3333 24.4667 30.2889 25.0167 29.8889C25.5667 29.4889 25.8444 28.8167 25.7333 28.15L24.3611 20.0555L30.15 14.3278C30.6278 13.8555 30.8 13.15 30.5889 12.5111C30.3778 11.8722 29.8278 11.4055 29.1611 11.3055L21.1778 10.1278L17.6056 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M59.6056 2.77777C59.3111 2.16666 58.6889 1.77777 58.0056 1.77777C57.3222 1.77777 56.7056 2.16666 56.4056 2.77777L52.8333 10.1278L44.8556 11.3055C44.1889 11.4055 43.6333 11.8722 43.4278 12.5111C43.2222 13.15 43.3889 13.8555 43.8667 14.3278L49.6556 20.0555L48.2889 28.15C48.1778 28.8167 48.4556 29.4944 49.0056 29.8889C49.5556 30.2833 50.2833 30.3333 50.8833 30.0167L58.0111 26.2111L65.1389 30.0167C65.7389 30.3333 66.4667 30.2889 67.0167 29.8889C67.5667 29.4889 67.8444 28.8167 67.7333 28.15L66.3611 20.0555L72.15 14.3278C72.6278 13.8555 72.8 13.15 72.5889 12.5111C72.3778 11.8722 71.8278 11.4055 71.1611 11.3055L63.1778 10.1278L59.6056 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M101.606 2.77777C101.311 2.16666 100.689 1.77777 100.006 1.77777C99.3222 1.77777 98.7056 2.16666 98.4056 2.77777L94.8333 10.1278L86.8556 11.3055C86.1889 11.4055 85.6333 11.8722 85.4278 12.5111C85.2222 13.15 85.3889 13.8555 85.8667 14.3278L91.6556 20.0555L90.2889 28.15C90.1778 28.8167 90.4556 29.4944 91.0056 29.8889C91.5556 30.2833 92.2833 30.3333 92.8833 30.0167L100.011 26.2111L107.139 30.0167C107.739 30.3333 108.467 30.2889 109.017 29.8889C109.567 29.4889 109.844 28.8167 109.733 28.15L108.361 20.0555L114.15 14.3278C114.628 13.8555 114.8 13.15 114.589 12.5111C114.378 11.8722 113.828 11.4055 113.161 11.3055L105.178 10.1278L101.606 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M143.606 2.77777C143.311 2.16666 142.689 1.77777 142.006 1.77777C141.322 1.77777 140.706 2.16666 140.406 2.77777L136.833 10.1278L128.856 11.3055C128.189 11.4055 127.633 11.8722 127.428 12.5111C127.222 13.15 127.389 13.8555 127.867 14.3278L133.656 20.0555L132.289 28.15C132.178 28.8167 132.456 29.4944 133.006 29.8889C133.556 30.2833 134.283 30.3333 134.883 30.0167L142.011 26.2111L149.139 30.0167C149.739 30.3333 150.467 30.2889 151.017 29.8889C151.567 29.4889 151.844 28.8167 151.733 28.15L150.361 20.0555L156.15 14.3278C156.628 13.8555 156.8 13.15 156.589 12.5111C156.378 11.8722 155.828 11.4055 155.161 11.3055L147.178 10.1278L143.606 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M185.606 2.77777C185.311 2.16666 184.689 1.77777 184.006 1.77777C183.322 1.77777 182.706 2.16666 182.406 2.77777L178.833 10.1278L170.856 11.3055C170.189 11.4055 169.633 11.8722 169.428 12.5111C169.222 13.15 169.389 13.8555 169.867 14.3278L175.656 20.0555L174.289 28.15C174.178 28.8167 174.456 29.4944 175.006 29.8889C175.556 30.2833 176.283 30.3333 176.883 30.0167L184.011 26.2111L191.139 30.0167C191.739 30.3333 192.467 30.2889 193.017 29.8889C193.567 29.4889 193.844 28.8167 193.733 28.15L192.361 20.0555L198.15 14.3278C198.628 13.8555 198.8 13.15 198.589 12.5111C198.378 11.8722 197.828 11.4055 197.161 11.3055L189.178 10.1278L185.606 2.77777Z"
+									fill="#D4B754" />
+							</svg>
+
+						</div>
+					</div>
+					<div class="swiper-slide testimonial-items">
+						<div class="testimonial-img tm-img-2">
+							<img src="img\new-images\profile.png" alt="">
+						</div>
+						<p class="testimonial-text">Thanks to Be Better, I've unlocked my true potential and
+							transformed how others perceive me. Their tailored strategies
+							are a must for anyone looking to stand out!</p>
+						<h3 class="testimonial-title">Jhon</h3>
+						<div class="review-stars">
+							<svg width="200" height="32" viewBox="0 0 200 32" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M17.6056 2.77777C17.3111 2.16666 16.6889 1.77777 16.0056 1.77777C15.3222 1.77777 14.7056 2.16666 14.4056 2.77777L10.8333 10.1278L2.85556 11.3055C2.18889 11.4055 1.63333 11.8722 1.42778 12.5111C1.22222 13.15 1.38889 13.8555 1.86667 14.3278L7.65556 20.0555L6.28889 28.15C6.17778 28.8167 6.45556 29.4944 7.00556 29.8889C7.55556 30.2833 8.28333 30.3333 8.88333 30.0167L16.0111 26.2111L23.1389 30.0167C23.7389 30.3333 24.4667 30.2889 25.0167 29.8889C25.5667 29.4889 25.8444 28.8167 25.7333 28.15L24.3611 20.0555L30.15 14.3278C30.6278 13.8555 30.8 13.15 30.5889 12.5111C30.3778 11.8722 29.8278 11.4055 29.1611 11.3055L21.1778 10.1278L17.6056 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M59.6056 2.77777C59.3111 2.16666 58.6889 1.77777 58.0056 1.77777C57.3222 1.77777 56.7056 2.16666 56.4056 2.77777L52.8333 10.1278L44.8556 11.3055C44.1889 11.4055 43.6333 11.8722 43.4278 12.5111C43.2222 13.15 43.3889 13.8555 43.8667 14.3278L49.6556 20.0555L48.2889 28.15C48.1778 28.8167 48.4556 29.4944 49.0056 29.8889C49.5556 30.2833 50.2833 30.3333 50.8833 30.0167L58.0111 26.2111L65.1389 30.0167C65.7389 30.3333 66.4667 30.2889 67.0167 29.8889C67.5667 29.4889 67.8444 28.8167 67.7333 28.15L66.3611 20.0555L72.15 14.3278C72.6278 13.8555 72.8 13.15 72.5889 12.5111C72.3778 11.8722 71.8278 11.4055 71.1611 11.3055L63.1778 10.1278L59.6056 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M101.606 2.77777C101.311 2.16666 100.689 1.77777 100.006 1.77777C99.3222 1.77777 98.7056 2.16666 98.4056 2.77777L94.8333 10.1278L86.8556 11.3055C86.1889 11.4055 85.6333 11.8722 85.4278 12.5111C85.2222 13.15 85.3889 13.8555 85.8667 14.3278L91.6556 20.0555L90.2889 28.15C90.1778 28.8167 90.4556 29.4944 91.0056 29.8889C91.5556 30.2833 92.2833 30.3333 92.8833 30.0167L100.011 26.2111L107.139 30.0167C107.739 30.3333 108.467 30.2889 109.017 29.8889C109.567 29.4889 109.844 28.8167 109.733 28.15L108.361 20.0555L114.15 14.3278C114.628 13.8555 114.8 13.15 114.589 12.5111C114.378 11.8722 113.828 11.4055 113.161 11.3055L105.178 10.1278L101.606 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M143.606 2.77777C143.311 2.16666 142.689 1.77777 142.006 1.77777C141.322 1.77777 140.706 2.16666 140.406 2.77777L136.833 10.1278L128.856 11.3055C128.189 11.4055 127.633 11.8722 127.428 12.5111C127.222 13.15 127.389 13.8555 127.867 14.3278L133.656 20.0555L132.289 28.15C132.178 28.8167 132.456 29.4944 133.006 29.8889C133.556 30.2833 134.283 30.3333 134.883 30.0167L142.011 26.2111L149.139 30.0167C149.739 30.3333 150.467 30.2889 151.017 29.8889C151.567 29.4889 151.844 28.8167 151.733 28.15L150.361 20.0555L156.15 14.3278C156.628 13.8555 156.8 13.15 156.589 12.5111C156.378 11.8722 155.828 11.4055 155.161 11.3055L147.178 10.1278L143.606 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M185.606 2.77777C185.311 2.16666 184.689 1.77777 184.006 1.77777C183.322 1.77777 182.706 2.16666 182.406 2.77777L178.833 10.1278L170.856 11.3055C170.189 11.4055 169.633 11.8722 169.428 12.5111C169.222 13.15 169.389 13.8555 169.867 14.3278L175.656 20.0555L174.289 28.15C174.178 28.8167 174.456 29.4944 175.006 29.8889C175.556 30.2833 176.283 30.3333 176.883 30.0167L184.011 26.2111L191.139 30.0167C191.739 30.3333 192.467 30.2889 193.017 29.8889C193.567 29.4889 193.844 28.8167 193.733 28.15L192.361 20.0555L198.15 14.3278C198.628 13.8555 198.8 13.15 198.589 12.5111C198.378 11.8722 197.828 11.4055 197.161 11.3055L189.178 10.1278L185.606 2.77777Z"
+									fill="#D4B754" />
+							</svg>
+
+						</div>
+					</div>
+					<div class="swiper-slide testimonial-items">
+						<div class="testimonial-img tm-img-3">
+							<img src="img\new-images\profile.png" alt="">
+						</div>
+						<p class="testimonial-text">Working with Be Better, was one of the best career decisions
+							I've made. Their dedication resulted in a brand identity
+							that truly resonates with my audience. Invest in your personal brand with them – you
+							won't regret it!</p>
+						<h3 class="testimonial-title">Katie</h3>
+						<div class="review-stars">
+							<svg width="200" height="32" viewBox="0 0 200 32" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M17.6056 2.77777C17.3111 2.16666 16.6889 1.77777 16.0056 1.77777C15.3222 1.77777 14.7056 2.16666 14.4056 2.77777L10.8333 10.1278L2.85556 11.3055C2.18889 11.4055 1.63333 11.8722 1.42778 12.5111C1.22222 13.15 1.38889 13.8555 1.86667 14.3278L7.65556 20.0555L6.28889 28.15C6.17778 28.8167 6.45556 29.4944 7.00556 29.8889C7.55556 30.2833 8.28333 30.3333 8.88333 30.0167L16.0111 26.2111L23.1389 30.0167C23.7389 30.3333 24.4667 30.2889 25.0167 29.8889C25.5667 29.4889 25.8444 28.8167 25.7333 28.15L24.3611 20.0555L30.15 14.3278C30.6278 13.8555 30.8 13.15 30.5889 12.5111C30.3778 11.8722 29.8278 11.4055 29.1611 11.3055L21.1778 10.1278L17.6056 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M59.6056 2.77777C59.3111 2.16666 58.6889 1.77777 58.0056 1.77777C57.3222 1.77777 56.7056 2.16666 56.4056 2.77777L52.8333 10.1278L44.8556 11.3055C44.1889 11.4055 43.6333 11.8722 43.4278 12.5111C43.2222 13.15 43.3889 13.8555 43.8667 14.3278L49.6556 20.0555L48.2889 28.15C48.1778 28.8167 48.4556 29.4944 49.0056 29.8889C49.5556 30.2833 50.2833 30.3333 50.8833 30.0167L58.0111 26.2111L65.1389 30.0167C65.7389 30.3333 66.4667 30.2889 67.0167 29.8889C67.5667 29.4889 67.8444 28.8167 67.7333 28.15L66.3611 20.0555L72.15 14.3278C72.6278 13.8555 72.8 13.15 72.5889 12.5111C72.3778 11.8722 71.8278 11.4055 71.1611 11.3055L63.1778 10.1278L59.6056 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M101.606 2.77777C101.311 2.16666 100.689 1.77777 100.006 1.77777C99.3222 1.77777 98.7056 2.16666 98.4056 2.77777L94.8333 10.1278L86.8556 11.3055C86.1889 11.4055 85.6333 11.8722 85.4278 12.5111C85.2222 13.15 85.3889 13.8555 85.8667 14.3278L91.6556 20.0555L90.2889 28.15C90.1778 28.8167 90.4556 29.4944 91.0056 29.8889C91.5556 30.2833 92.2833 30.3333 92.8833 30.0167L100.011 26.2111L107.139 30.0167C107.739 30.3333 108.467 30.2889 109.017 29.8889C109.567 29.4889 109.844 28.8167 109.733 28.15L108.361 20.0555L114.15 14.3278C114.628 13.8555 114.8 13.15 114.589 12.5111C114.378 11.8722 113.828 11.4055 113.161 11.3055L105.178 10.1278L101.606 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M143.606 2.77777C143.311 2.16666 142.689 1.77777 142.006 1.77777C141.322 1.77777 140.706 2.16666 140.406 2.77777L136.833 10.1278L128.856 11.3055C128.189 11.4055 127.633 11.8722 127.428 12.5111C127.222 13.15 127.389 13.8555 127.867 14.3278L133.656 20.0555L132.289 28.15C132.178 28.8167 132.456 29.4944 133.006 29.8889C133.556 30.2833 134.283 30.3333 134.883 30.0167L142.011 26.2111L149.139 30.0167C149.739 30.3333 150.467 30.2889 151.017 29.8889C151.567 29.4889 151.844 28.8167 151.733 28.15L150.361 20.0555L156.15 14.3278C156.628 13.8555 156.8 13.15 156.589 12.5111C156.378 11.8722 155.828 11.4055 155.161 11.3055L147.178 10.1278L143.606 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M185.606 2.77777C185.311 2.16666 184.689 1.77777 184.006 1.77777C183.322 1.77777 182.706 2.16666 182.406 2.77777L178.833 10.1278L170.856 11.3055C170.189 11.4055 169.633 11.8722 169.428 12.5111C169.222 13.15 169.389 13.8555 169.867 14.3278L175.656 20.0555L174.289 28.15C174.178 28.8167 174.456 29.4944 175.006 29.8889C175.556 30.2833 176.283 30.3333 176.883 30.0167L184.011 26.2111L191.139 30.0167C191.739 30.3333 192.467 30.2889 193.017 29.8889C193.567 29.4889 193.844 28.8167 193.733 28.15L192.361 20.0555L198.15 14.3278C198.628 13.8555 198.8 13.15 198.589 12.5111C198.378 11.8722 197.828 11.4055 197.161 11.3055L189.178 10.1278L185.606 2.77777Z"
+									fill="#D4B754" />
+							</svg>
+
+						</div>
+					</div>
+
+					<div class="swiper-slide testimonial-items">
+						<div class="testimonial-img tm-img-1">
+							<img src="img\new-images\profile.png" alt="">
+						</div>
+						<p class="testimonial-text">Discovering Be Better was a game-changer! Their unmatched
+							expertise skyrocketed my online
+							presence and credibility.
+							Highly recommended</p>
+						<h3 class="testimonial-title">Amy</h3>
+						<div class="review-stars">
+							<svg width="200" height="32" viewBox="0 0 200 32" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M17.6056 2.77777C17.3111 2.16666 16.6889 1.77777 16.0056 1.77777C15.3222 1.77777 14.7056 2.16666 14.4056 2.77777L10.8333 10.1278L2.85556 11.3055C2.18889 11.4055 1.63333 11.8722 1.42778 12.5111C1.22222 13.15 1.38889 13.8555 1.86667 14.3278L7.65556 20.0555L6.28889 28.15C6.17778 28.8167 6.45556 29.4944 7.00556 29.8889C7.55556 30.2833 8.28333 30.3333 8.88333 30.0167L16.0111 26.2111L23.1389 30.0167C23.7389 30.3333 24.4667 30.2889 25.0167 29.8889C25.5667 29.4889 25.8444 28.8167 25.7333 28.15L24.3611 20.0555L30.15 14.3278C30.6278 13.8555 30.8 13.15 30.5889 12.5111C30.3778 11.8722 29.8278 11.4055 29.1611 11.3055L21.1778 10.1278L17.6056 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M59.6056 2.77777C59.3111 2.16666 58.6889 1.77777 58.0056 1.77777C57.3222 1.77777 56.7056 2.16666 56.4056 2.77777L52.8333 10.1278L44.8556 11.3055C44.1889 11.4055 43.6333 11.8722 43.4278 12.5111C43.2222 13.15 43.3889 13.8555 43.8667 14.3278L49.6556 20.0555L48.2889 28.15C48.1778 28.8167 48.4556 29.4944 49.0056 29.8889C49.5556 30.2833 50.2833 30.3333 50.8833 30.0167L58.0111 26.2111L65.1389 30.0167C65.7389 30.3333 66.4667 30.2889 67.0167 29.8889C67.5667 29.4889 67.8444 28.8167 67.7333 28.15L66.3611 20.0555L72.15 14.3278C72.6278 13.8555 72.8 13.15 72.5889 12.5111C72.3778 11.8722 71.8278 11.4055 71.1611 11.3055L63.1778 10.1278L59.6056 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M101.606 2.77777C101.311 2.16666 100.689 1.77777 100.006 1.77777C99.3222 1.77777 98.7056 2.16666 98.4056 2.77777L94.8333 10.1278L86.8556 11.3055C86.1889 11.4055 85.6333 11.8722 85.4278 12.5111C85.2222 13.15 85.3889 13.8555 85.8667 14.3278L91.6556 20.0555L90.2889 28.15C90.1778 28.8167 90.4556 29.4944 91.0056 29.8889C91.5556 30.2833 92.2833 30.3333 92.8833 30.0167L100.011 26.2111L107.139 30.0167C107.739 30.3333 108.467 30.2889 109.017 29.8889C109.567 29.4889 109.844 28.8167 109.733 28.15L108.361 20.0555L114.15 14.3278C114.628 13.8555 114.8 13.15 114.589 12.5111C114.378 11.8722 113.828 11.4055 113.161 11.3055L105.178 10.1278L101.606 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M143.606 2.77777C143.311 2.16666 142.689 1.77777 142.006 1.77777C141.322 1.77777 140.706 2.16666 140.406 2.77777L136.833 10.1278L128.856 11.3055C128.189 11.4055 127.633 11.8722 127.428 12.5111C127.222 13.15 127.389 13.8555 127.867 14.3278L133.656 20.0555L132.289 28.15C132.178 28.8167 132.456 29.4944 133.006 29.8889C133.556 30.2833 134.283 30.3333 134.883 30.0167L142.011 26.2111L149.139 30.0167C149.739 30.3333 150.467 30.2889 151.017 29.8889C151.567 29.4889 151.844 28.8167 151.733 28.15L150.361 20.0555L156.15 14.3278C156.628 13.8555 156.8 13.15 156.589 12.5111C156.378 11.8722 155.828 11.4055 155.161 11.3055L147.178 10.1278L143.606 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M185.606 2.77777C185.311 2.16666 184.689 1.77777 184.006 1.77777C183.322 1.77777 182.706 2.16666 182.406 2.77777L178.833 10.1278L170.856 11.3055C170.189 11.4055 169.633 11.8722 169.428 12.5111C169.222 13.15 169.389 13.8555 169.867 14.3278L175.656 20.0555L174.289 28.15C174.178 28.8167 174.456 29.4944 175.006 29.8889C175.556 30.2833 176.283 30.3333 176.883 30.0167L184.011 26.2111L191.139 30.0167C191.739 30.3333 192.467 30.2889 193.017 29.8889C193.567 29.4889 193.844 28.8167 193.733 28.15L192.361 20.0555L198.15 14.3278C198.628 13.8555 198.8 13.15 198.589 12.5111C198.378 11.8722 197.828 11.4055 197.161 11.3055L189.178 10.1278L185.606 2.77777Z"
+									fill="#D4B754" />
+							</svg>
+
+						</div>
+					</div>
+					<div class="swiper-slide testimonial-items">
+						<div class="testimonial-img tm-img-2">
+							<img src="img\new-images\profile.png" alt="">
+						</div>
+						<p class="testimonial-text">Thanks to Be Better, I've unlocked my true potential and
+							transformed how others perceive me. Their tailored strategies
+							are a must for anyone looking to stand out!</p>
+						<h3 class="testimonial-title">Jhon</h3>
+						<div class="review-stars">
+							<svg width="200" height="32" viewBox="0 0 200 32" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M17.6056 2.77777C17.3111 2.16666 16.6889 1.77777 16.0056 1.77777C15.3222 1.77777 14.7056 2.16666 14.4056 2.77777L10.8333 10.1278L2.85556 11.3055C2.18889 11.4055 1.63333 11.8722 1.42778 12.5111C1.22222 13.15 1.38889 13.8555 1.86667 14.3278L7.65556 20.0555L6.28889 28.15C6.17778 28.8167 6.45556 29.4944 7.00556 29.8889C7.55556 30.2833 8.28333 30.3333 8.88333 30.0167L16.0111 26.2111L23.1389 30.0167C23.7389 30.3333 24.4667 30.2889 25.0167 29.8889C25.5667 29.4889 25.8444 28.8167 25.7333 28.15L24.3611 20.0555L30.15 14.3278C30.6278 13.8555 30.8 13.15 30.5889 12.5111C30.3778 11.8722 29.8278 11.4055 29.1611 11.3055L21.1778 10.1278L17.6056 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M59.6056 2.77777C59.3111 2.16666 58.6889 1.77777 58.0056 1.77777C57.3222 1.77777 56.7056 2.16666 56.4056 2.77777L52.8333 10.1278L44.8556 11.3055C44.1889 11.4055 43.6333 11.8722 43.4278 12.5111C43.2222 13.15 43.3889 13.8555 43.8667 14.3278L49.6556 20.0555L48.2889 28.15C48.1778 28.8167 48.4556 29.4944 49.0056 29.8889C49.5556 30.2833 50.2833 30.3333 50.8833 30.0167L58.0111 26.2111L65.1389 30.0167C65.7389 30.3333 66.4667 30.2889 67.0167 29.8889C67.5667 29.4889 67.8444 28.8167 67.7333 28.15L66.3611 20.0555L72.15 14.3278C72.6278 13.8555 72.8 13.15 72.5889 12.5111C72.3778 11.8722 71.8278 11.4055 71.1611 11.3055L63.1778 10.1278L59.6056 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M101.606 2.77777C101.311 2.16666 100.689 1.77777 100.006 1.77777C99.3222 1.77777 98.7056 2.16666 98.4056 2.77777L94.8333 10.1278L86.8556 11.3055C86.1889 11.4055 85.6333 11.8722 85.4278 12.5111C85.2222 13.15 85.3889 13.8555 85.8667 14.3278L91.6556 20.0555L90.2889 28.15C90.1778 28.8167 90.4556 29.4944 91.0056 29.8889C91.5556 30.2833 92.2833 30.3333 92.8833 30.0167L100.011 26.2111L107.139 30.0167C107.739 30.3333 108.467 30.2889 109.017 29.8889C109.567 29.4889 109.844 28.8167 109.733 28.15L108.361 20.0555L114.15 14.3278C114.628 13.8555 114.8 13.15 114.589 12.5111C114.378 11.8722 113.828 11.4055 113.161 11.3055L105.178 10.1278L101.606 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M143.606 2.77777C143.311 2.16666 142.689 1.77777 142.006 1.77777C141.322 1.77777 140.706 2.16666 140.406 2.77777L136.833 10.1278L128.856 11.3055C128.189 11.4055 127.633 11.8722 127.428 12.5111C127.222 13.15 127.389 13.8555 127.867 14.3278L133.656 20.0555L132.289 28.15C132.178 28.8167 132.456 29.4944 133.006 29.8889C133.556 30.2833 134.283 30.3333 134.883 30.0167L142.011 26.2111L149.139 30.0167C149.739 30.3333 150.467 30.2889 151.017 29.8889C151.567 29.4889 151.844 28.8167 151.733 28.15L150.361 20.0555L156.15 14.3278C156.628 13.8555 156.8 13.15 156.589 12.5111C156.378 11.8722 155.828 11.4055 155.161 11.3055L147.178 10.1278L143.606 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M185.606 2.77777C185.311 2.16666 184.689 1.77777 184.006 1.77777C183.322 1.77777 182.706 2.16666 182.406 2.77777L178.833 10.1278L170.856 11.3055C170.189 11.4055 169.633 11.8722 169.428 12.5111C169.222 13.15 169.389 13.8555 169.867 14.3278L175.656 20.0555L174.289 28.15C174.178 28.8167 174.456 29.4944 175.006 29.8889C175.556 30.2833 176.283 30.3333 176.883 30.0167L184.011 26.2111L191.139 30.0167C191.739 30.3333 192.467 30.2889 193.017 29.8889C193.567 29.4889 193.844 28.8167 193.733 28.15L192.361 20.0555L198.15 14.3278C198.628 13.8555 198.8 13.15 198.589 12.5111C198.378 11.8722 197.828 11.4055 197.161 11.3055L189.178 10.1278L185.606 2.77777Z"
+									fill="#D4B754" />
+							</svg>
+
+						</div>
+					</div>
+					<div class="swiper-slide testimonial-items">
+						<div class="testimonial-img tm-img-3">
+							<img src="img\new-images\profile.png" alt="">
+						</div>
+						<p class="testimonial-text">Working with Be Better, was one of the best career decisions
+							I've made. Their dedication resulted in a brand identity
+							that truly resonates with my audience. Invest in your personal brand with them – you
+							won't regret it!</p>
+						<h3 class="testimonial-title">Katie</h3>
+						<div class="review-stars">
+							<svg width="200" height="32" viewBox="0 0 200 32" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M17.6056 2.77777C17.3111 2.16666 16.6889 1.77777 16.0056 1.77777C15.3222 1.77777 14.7056 2.16666 14.4056 2.77777L10.8333 10.1278L2.85556 11.3055C2.18889 11.4055 1.63333 11.8722 1.42778 12.5111C1.22222 13.15 1.38889 13.8555 1.86667 14.3278L7.65556 20.0555L6.28889 28.15C6.17778 28.8167 6.45556 29.4944 7.00556 29.8889C7.55556 30.2833 8.28333 30.3333 8.88333 30.0167L16.0111 26.2111L23.1389 30.0167C23.7389 30.3333 24.4667 30.2889 25.0167 29.8889C25.5667 29.4889 25.8444 28.8167 25.7333 28.15L24.3611 20.0555L30.15 14.3278C30.6278 13.8555 30.8 13.15 30.5889 12.5111C30.3778 11.8722 29.8278 11.4055 29.1611 11.3055L21.1778 10.1278L17.6056 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M59.6056 2.77777C59.3111 2.16666 58.6889 1.77777 58.0056 1.77777C57.3222 1.77777 56.7056 2.16666 56.4056 2.77777L52.8333 10.1278L44.8556 11.3055C44.1889 11.4055 43.6333 11.8722 43.4278 12.5111C43.2222 13.15 43.3889 13.8555 43.8667 14.3278L49.6556 20.0555L48.2889 28.15C48.1778 28.8167 48.4556 29.4944 49.0056 29.8889C49.5556 30.2833 50.2833 30.3333 50.8833 30.0167L58.0111 26.2111L65.1389 30.0167C65.7389 30.3333 66.4667 30.2889 67.0167 29.8889C67.5667 29.4889 67.8444 28.8167 67.7333 28.15L66.3611 20.0555L72.15 14.3278C72.6278 13.8555 72.8 13.15 72.5889 12.5111C72.3778 11.8722 71.8278 11.4055 71.1611 11.3055L63.1778 10.1278L59.6056 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M101.606 2.77777C101.311 2.16666 100.689 1.77777 100.006 1.77777C99.3222 1.77777 98.7056 2.16666 98.4056 2.77777L94.8333 10.1278L86.8556 11.3055C86.1889 11.4055 85.6333 11.8722 85.4278 12.5111C85.2222 13.15 85.3889 13.8555 85.8667 14.3278L91.6556 20.0555L90.2889 28.15C90.1778 28.8167 90.4556 29.4944 91.0056 29.8889C91.5556 30.2833 92.2833 30.3333 92.8833 30.0167L100.011 26.2111L107.139 30.0167C107.739 30.3333 108.467 30.2889 109.017 29.8889C109.567 29.4889 109.844 28.8167 109.733 28.15L108.361 20.0555L114.15 14.3278C114.628 13.8555 114.8 13.15 114.589 12.5111C114.378 11.8722 113.828 11.4055 113.161 11.3055L105.178 10.1278L101.606 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M143.606 2.77777C143.311 2.16666 142.689 1.77777 142.006 1.77777C141.322 1.77777 140.706 2.16666 140.406 2.77777L136.833 10.1278L128.856 11.3055C128.189 11.4055 127.633 11.8722 127.428 12.5111C127.222 13.15 127.389 13.8555 127.867 14.3278L133.656 20.0555L132.289 28.15C132.178 28.8167 132.456 29.4944 133.006 29.8889C133.556 30.2833 134.283 30.3333 134.883 30.0167L142.011 26.2111L149.139 30.0167C149.739 30.3333 150.467 30.2889 151.017 29.8889C151.567 29.4889 151.844 28.8167 151.733 28.15L150.361 20.0555L156.15 14.3278C156.628 13.8555 156.8 13.15 156.589 12.5111C156.378 11.8722 155.828 11.4055 155.161 11.3055L147.178 10.1278L143.606 2.77777Z"
+									fill="#D4B754" />
+								<path
+									d="M185.606 2.77777C185.311 2.16666 184.689 1.77777 184.006 1.77777C183.322 1.77777 182.706 2.16666 182.406 2.77777L178.833 10.1278L170.856 11.3055C170.189 11.4055 169.633 11.8722 169.428 12.5111C169.222 13.15 169.389 13.8555 169.867 14.3278L175.656 20.0555L174.289 28.15C174.178 28.8167 174.456 29.4944 175.006 29.8889C175.556 30.2833 176.283 30.3333 176.883 30.0167L184.011 26.2111L191.139 30.0167C191.739 30.3333 192.467 30.2889 193.017 29.8889C193.567 29.4889 193.844 28.8167 193.733 28.15L192.361 20.0555L198.15 14.3278C198.628 13.8555 198.8 13.15 198.589 12.5111C198.378 11.8722 197.828 11.4055 197.161 11.3055L189.178 10.1278L185.606 2.77777Z"
+									fill="#D4B754" />
+							</svg>
+
+						</div>
+					</div>
+				</div>
+				<!--     <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div> -->
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</section>
+
+	<style>
+		:root {
+			--primary-text: #192a4e;
+			--secondary-text: #d4b754;
+			--white-text-white: #ffffff;
+			--black-text-black: #000000;
+			/* --gray-text: #464646;
+    --light-white: #c8c8c8; */
+		}
+
+
+
+		.section-title {
+			/* color: var(--primary-text); */
+			color: #fff;
+			text-align: center;
+			font-size: 40px;
+			font-family: "Cormorant Garamond";
+			font-weight: bold;
+			font-style: normal;
+			line-height: 48px;
+			position: relative;
+			/* margin-bottom: 52px; */
+		}
+
+		/* .section-title::before,
+		.section-title::after {
+			content: "";
+			position: absolute;
+			left: 20%;
+			top: 27px;
+			width: 225px !important;
+			height: 2px;
+			background-color: var(--secondary-text);
+		}
+
+		.section-title::after {
+			left: unset;
+			right: 20% !important;
+		} */
+
+		.testimonial-section {
+			/* padding-top: 82px; */
+			/* padding-bottom: 72px; */
+		}
+
+		.swiper {
+			width: 100%;
+			height: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.swiper-slide {
+			text-align: center;
+			border-radius: 40px;
+			padding: 30px 23px;
+			/* background: var(--primary-text); */
+			background-color: #D4B754;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.swiper-slide img {
+			display: block;
+			width: 70%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.swiper-pagination-bullet {
+			width: var(--swiper-pagination-bullet-width,
+					var(--swiper-pagination-bullet-size, 15px));
+			height: var(--swiper-pagination-bullet-height,
+					var(--swiper-pagination-bullet-size, 15px));
+			background: #d9d9d9;
+			background: #504b4b;
+		}
+
+		.swiper-horizontal>.swiper-pagination-bullets,
+		.swiper-pagination-bullets.swiper-pagination-horizontal,
+		.swiper-pagination-custom,
+		.swiper-pagination-fraction {
+			bottom: var(--swiper-pagination-bottom, 20px);
+		}
+
+		.swiper-pagination-bullet-active {
+			/* background: var(--primary-text); */
+			background: #eee;
+		}
+
+		.swiper.testimonial-wrapper {
+			/* padding-top: 59px; */
+			/* padding-bottom: 60px; */
+		}
+
+		.testimonial-items .testimonial-text {
+			/* color: var(--white-text-white); */
+			color: #000000;
+			text-align: center;
+			font-size: 20px;
+			font-family: "Outfit";
+			font-weight: normal;
+			font-style: normal;
+			max-width: 330px;
+			margin-bottom: 45px;
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			line-clamp: 4;
+			-webkit-line-clamp: 4;
+			padding-top: 20px;
+		}
+
+		.testimonial-items .testimonial-title {
+			color: var(--white-text-white);
+			text-align: center;
+			font-size: 25px;
+			font-family: serif;
+			font-weight: 600;
+			/* font-style: normal; */
+			margin-bottom: 35px;
+			position: relative;
+		}
+
+		.testimonial-items .testimonial-title::before {
+			content: "";
+			position: absolute;
+			left: -23px;
+			top: 9px;
+			width: 20px;
+			height: 1px;
+			background-color: var(--white-text-white);
+		}
+
+		.testimonial-img {
+			position: relative;
+			width: 100px;
+			height: 100px;
+			height: 70px;
+		}
+
+
+
+		
+		/* media query  */
+		@media screen and (min-width: 430px) {
+			.swiper-pagination-bullet {
+				width: var(--swiper-pagination-bullet-width,
+						var(--swiper-pagination-bullet-size, 24px));
+				height: var(--swiper-pagination-bullet-height,
+						var(--swiper-pagination-bullet-size, 24px));
+			}
+
+			.section-title::before,
+			.section-title::after {
+				width: 141px;
+			}
+			.section-title::before,
+		.section-title::after {
+			content: "";
+			position: absolute;
+			left: 7%;
+			top: 27px;
+			width: 75px !important;
+			height: 2px;
+			background-color: var(--secondary-text);
+		}
+
+		.section-title::after {
+			left: unset;
+			right: 5% !important;
+		}
+			  /* .section-title::before,
+  .section-title::after {
+    left: 25%;
+  }
+  .section-title::after {
+    right: 25%;
+  } */
+		}
+
+		
+		
+
+	</style>
+
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper(".testimonial-wrapper", {
+			slidesPerView: 1,
+			slidesPerGroup: 1,
+			spaceBetween: 30,
+			loop: true,
+			speed: 1300,
+			autoplay: true,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true
+			},
+			breakpoints: {
+				768: {
+					slidesPerView: 3,
+					slidesPerGroup: 3
+				},
+				480: {
+					slidesPerView: 2,
+					slidesPerGroup: 1
+				}
+			}
+		});
+
+	</script>
+
+	<!-- Footer Section -->
+
+
+	<footer class="footer">
+		<div class="footer-content">
+			<aside class="footer-brand">
+				<div class="footer-icon p-0">
+					<a href="index.html"><img src="img/new-images/logooo.png" alt="image"></a>
+				</div>
+				<p class="brand-text">
+					Bharat Gaurav Samman
+					<br />
+					<!-- Providing reliable atoms since 1945. -->
+				</p>
+			</aside>
+			<nav>
+				<h6 class="footer-heading">Follow Us</h6>
+				<a href="#" class="footer-link">Facebook</a>
+				<a href="#" class="footer-link">Twitter</a>
+				<a href="#" class="footer-link">Linkedin</a>
+				<a href="#" class="footer-link">Instagram</a>
+			</nav>
+			<nav>
+				<h6 class="footer-heading">Quick Links</h6>
+				<a href="index.html" class="footer-link">Home</a>
+				<a href="catalogCopy.html" class="footer-link">Videos</a>
+				<a href="catalogCopy1.html" class="footer-link">Gallery</a>
+				<!-- <a href="index.html" class="footer-link">Contact</a> -->
+			</nav>
+			<nav>
+				<h6 class="footer-heading">Legal</h6>
+				<a class="footer-link">Terms of use</a>
+				<a class="footer-link">Privacy policy</a>
+				<a class="footer-link">Cookie policy</a>
+			</nav>
+		</div>
+	</footer>
+	<div class="footer-bottom">
+		<p>&copy; Copyright Bharat Gaurav Samman, All rights reserved. Designed by BTPL</p>
+	</div>
+
+	<style>
+		:root {
+			/* Colors */
+			/* --primary-bg: #333333; */
+			--text-light: #fff;
+			--text-muted: #bdbdbd;
+			--accent: #D4B754;
+
+			/* Fonts */
+			--font-heading: 'Bodoni Moda', serif;
+			--font-body: 'Raleway', sans-serif;
+
+			/* Font sizes */
+			--text-xl: 1.5rem;
+			--text-base: 1rem;
+			--text-sm: 0.875rem;
+
+			/* Spacing */
+			--spacing-xl: 80px;
+			--spacing-lg: 40px;
+			--spacing-md: 20px;
+			--spacing-sm: 12px;
+		}
+
+		.footer {
+			width: 100vw;
+			background-color: var(--primary-bg);
+			/* padding: var(--spacing-lg) 0; */
+			/* margin-top: var(--spacing-xl); */
+			margin-top: 10px;
+			padding:20px ;
+		}
+
+		.footer-brand {
+			display: flex;
+			flex-direction: column;
+			/* gap: var(--spacing-sm); */
+		}
+
+		.footer-icon img {
+			display: inline-block;
+			width: 140px;
+			margin-left: 60px;
+			/* height: 75px; */
+			/* background-image: url("main/img/new-images/bg-logo.png"); */
+			/* background-color: var(--text-light); */
+			/* -webkit-mask-image: var(--svg); */
+			/* mask-image: var(--svg); */
+			/* -webkit-mask-repeat: no-repeat; */
+			/* mask-repeat: no-repeat; */
+			/* -webkit-mask-size: 100% 100%; */
+			/* mask-size: 100% 100%; */
+			
+		}
+
+		.brand-text {
+			/* color: var(--text-light); */
+			color: #D4B754;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			/* font-size: var(--text-sm); */
+			font-weight: 700;
+			font-size: 30px;
+			line-height: 1.6;
+		}
+
+		.footer-content {
+			display: flex;
+			justify-content: space-between;
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 var(--spacing-xl);
+			/* Increased padding */
+			gap: var(--spacing-xl);
+		}
+
+		.footer nav {
+			display: flex;
+			flex-direction: column;
+			gap: var(--spacing-sm);
+		}
+
+		.footer-heading {
+			color: var(--text-light);
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			/* font-size: var(--text-base); */
+			font-size: 22px;
+			font-weight: 600;
+			text-transform: uppercase;
+			margin-bottom: var(--spacing-sm);
+		}
+
+		.footer-link {
+			color: var(--text-muted);
+			text-decoration: none;
+			cursor: pointer;
+			/* font-size: var(--text-sm); */
+			font-size: 17px;
+			font-family: var(--font-body), sans-serif;
+		}
+
+		.footer-link:hover {
+			color: var(--accent);
+			text-decoration: underline;
+		}
+
+		.footer-bottom {
+			background-color: #D4B754;
+		}
+
+		.footer-bottom p {
+			text-align: center;
+			padding: 10px;
+			color: #000;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			font-size: 18px;
+		}
+
+		@media (max-width: 768px) {
+			.footer-content {
+				flex-direction: column;
+				gap: var(--spacing-lg);
+				padding: var(--spacing-md);
+			}
+
+			.footer-brand {
+				align-items: center;
+				text-align: center;
+			}
+		}
+	</style>
+
+	<!-- JS -->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/splide.min.js"></script>
+	<script src="js/slimselect.min.js"></script>
+	<script src="js/smooth-scrollbar.js"></script>
+	<script src="js/plyr.min.js"></script>
+	<script src="js/photoswipe.min.js"></script>
+	<script src="js/photoswipe-ui-default.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+<!-- Mirrored from hotflix.volkovdesign.com/main/index3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Dec 2024 00:40:57 GMT -->
+
+</html>
